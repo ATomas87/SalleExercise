@@ -1,0 +1,14 @@
+.main-navigator{
+    background-color: purple;
+}
+
+.main-navigator-list {
+    list-style-type: none;
+}
+
+.main-navigator-element {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    color:white;
+    display: inline;
+}
