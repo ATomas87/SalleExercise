@@ -1,11 +1,45 @@
 const http = require('http');
-const fs = require('fs');
+const fs = require('fs').promises;
+
 const host = 'localhost';
 const port = 8000;
 
-const server = http.createServer((req, res) => {
-	res.writeHead(200, { 'Content-Type': 'text/html' })
-	fs.createReadStream('index.html').pipe(res)
-})
+const requestListener = function (request, response) {
+    console.dir('Request params' + request.param);
 
-server.listen(process.env.port || 3000)
+    if (request.method == 'POST') {
+        console.log('POST');
+        var body = '';
+
+        //listening to the stream data events
+
+        request.on('data', function (data) {
+            body += data;
+            console.log('Partial body: ' + body);
+        });
+        //stream end
+        request.on('end', function () {
+            console.log('Body: ' + body);
+            response.writeHead(200, { 'Content-Type': 'text/html' });
+            response.end('post recived ' + body);
+        });
+    }
+    else if (request.method == 'GET') {
+        switch (request.url) {
+            case '/file':
+                fs.ReadFile(__dirname + '/index.html').then((contents) => {
+                    response.setHeader('Content-Type', 'text/html');
+                    response.writeHead(200);
+                    response.end(contents);
+                });
+                break;
+            default: response.writeHead(404);
+                response.end(JSON.stringify({ error: "Resource not found" }));
+        }
+    }
+};
+
+const server = http.createServer(requestListener);
+server.listen(port, host, () => {
+    console.log('Server is running ok, on http://${host}:${port}');
+});
