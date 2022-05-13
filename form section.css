@@ -1,0 +1,55 @@
+.emailus-section {
+    background-color: violet;
+    background-image: url(https://img.freepik.com/vector-gratis/diseno-mapamundi-puntos_23-2147616357.jpg); 
+    position:relative;
+      height:540px;
+      width:640px;
+      margin:0 auto;
+  } 
+  
+  h2 {
+    color: white;
+    margin: 0 auto;
+    width: 100px; 
+    font-family: Open Sans;
+  }
+  
+  label {
+    color: white;
+    font-family: Open Sans;
+    font-size: larger;
+    text-align: left;
+    padding: 5px;
+    display: inline;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  .formulario {
+    display: block;
+    margin: 0 auto; 
+    width: 300px;  
+    font-family: Open Sans;
+       
+  }
+  
+  input[type="text"] {
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    transform : translate(+50%, +50%);
+    text-align: right;
+    align-items: center;
+
+  }
+  
+  textarea[name="message"] {
+    border-radius: 10px;
+  }
+  
+  input[type="email"]
+  
+  input[type="submit"] {
+    margin: 0 auto;
+    border-radius: 10px;
+  }
