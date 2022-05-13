@@ -1,0 +1,54 @@
+/*.services-section{
+    width:auto;
+    max-width: 1000px;
+    margin: auto;
+    padding: 5%;
+    display: table;
+}
+
+.services-section > h2 {
+    display: block;
+    text-align: center;
+}
+
+article {
+    display: inline-table;
+    width: 33%;
+}
+
+article>p {
+    text-align: justify;
+}
+
+article::before {
+    display: inline-block;
+    content: icon;
+}*/
+
+#boxcontent {
+    width:auto;
+    max-width: 1000px;
+    margin: auto;
+    display: table;
+}
+h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#boxcontent article {
+    font-size: 14px;
+    display: inline-table;
+    width: 33%;
+}
+#boxcontent article h3 {
+    font-family:'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 75px;
+}
+#boxcontent article p {
+    line-height: 25px;
+    font-family:'Open Sans', sans-serif;
+    margin-left: 75px;
+}
