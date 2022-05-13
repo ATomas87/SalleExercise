@@ -26,29 +26,56 @@ article::before {
 }*/
 
 #boxcontent {
-    width:auto;
+    width: auto;
     max-width: 1000px;
     margin: auto;
     display: table;
 }
+
 h2 {
     display: block;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-bottom: 50px;
 }
+
 #boxcontent article {
     font-size: 14px;
     display: inline-table;
     width: 33%;
 }
+
 #boxcontent article h3 {
-    font-family:'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    margin-bottom: 10px;
-    margin-left: 75px;
+    margin-left: .2em;
+    display: inline;
 }
+
 #boxcontent article p {
     line-height: 25px;
-    font-family:'Open Sans', sans-serif;
-    margin-left: 75px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0%;
+    margin-right: 1em;
+    margin-left: 5.5em;
+    text-align: justify;
+    
 }
+
+.fa-stack.big{
+    font-size: 2em;
+}
+i{vertical-align: bottom;}
+
+article:hover{
+    color: purple;
+}
+
+/*article::before {
+    font-family: 'Font Awesome 6 Free';
+    content: "\f0c2";
+    font-weight: 900;
+    font-size: 3em;
+    display: inline-block;
+    vertical-align: bottom;
+}*/
