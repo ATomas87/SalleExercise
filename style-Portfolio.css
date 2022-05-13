@@ -1,0 +1,52 @@
+/* Estils David*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.ImatgePortfolio
+{
+    height: 154px;
+    width: 240px;     
+}
+
+.ImatgePortfolio:hover
+{
+    transform: rotate(-20deg);
+    transition-duration: 1s;
+}
+
+
+.ImatgePortfolioEspecial
+{
+    height: 154px;
+    width: 240px;     
+}
+.ImatgePortfolioEspecial:hover
+{
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    border-radius: 260px;
+}
+
+table{
+ width: 100%; 
+}
+
+h2{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 2.5em;
+    font-weight: 300;
+    color:dimgrey;
+}
+
+h3{
+    font-family: "Open Sans";
+    font-style: normal;   
+    font-weight: 200;
+    color:dimgrey;
+}
