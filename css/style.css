@@ -12,6 +12,7 @@ i {
 
 .fa-circle{
     color: grey;
+    
 }
 
 .fa-gear, .fa-rss, .fa-earth-americas, .fa-flag, .fa-code, .fa-cloud{
@@ -171,7 +172,8 @@ aside {
     text-align: justify;
 }
 
-/* Estils David*/
+/* Estils David    */
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
