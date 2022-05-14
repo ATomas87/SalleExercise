@@ -298,3 +298,31 @@ footer {
     margin: 0 auto;
     border-radius: 10px;
   }
+
+  header{
+    width: 1024px;
+    height: 500px;  
+    background-image: url(../img/header.jpg);
+    background-size: 100% 100%;
+}
+
+
+h1{
+    color: white;
+    font-family: ;
+
+}
+
+.main-navigator{
+    background-color: #61458C;
+}
+
+.main-navigator-element{
+    background-color: #61458C;
+    color:white;
+}
+
+li{
+    display: inline;
+
+}
