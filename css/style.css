@@ -1,82 +1,66 @@
-/*.services-section{
-    width:auto;
-    max-width: 1000px;
-    margin: auto;
-    padding: 5%;
-    display: table;
+.fa-stack.big {
+    font-size: 3em;
 }
 
-.services-section > h2 {
-    display: block;
-    text-align: center;
+i {
+    vertical-align: bottom;
 }
 
-article {
-    display: inline-table;
-    width: 33%;
-}
-
-article>p {
-    text-align: justify;
-}
-
-article::before {
-    display: inline-block;
-    content: icon;
+/*article:hover {
+    color: purple;
 }*/
 
-#boxcontent {
-    width: auto;
-    max-width: 1000px;
-    margin: auto;
-    display: table;
+.fa-circle{
+    color: grey;
 }
 
-h2 {
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#boxcontent article {
-    font-size: 14px;
-    display: inline-table;
-    width: 33%;
-}
-
-#boxcontent article h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    margin-left: .2em;
-    display: inline;
-}
-
-#boxcontent article p {
-    line-height: 25px;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 0%;
-    margin-right: 1em;
-    margin-left: 5.5em;
-    text-align: justify;
-    
-}
-
-.fa-stack.big{
-    font-size: 2em;
-}
-i{vertical-align: bottom;}
-
-
-article:hover{
+.fa-gear, .fa-rss, .fa-earth-americas, .fa-flag, .fa-code, .fa-cloud{
     color: purple;
 }
 
-/*article::before {
-    font-family: 'Font Awesome 6 Free';
-    content: "\f0c2";
-    font-weight: 900;
-    font-size: 3em;
+.services-section {
+    display: flex;
+    margin: auto;
+    max-width: 1024px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    width: 33%;
+}
+
+div.content {
     display: inline-block;
-    vertical-align: bottom;
-}*/
+    width: 66%;
+}
+
+div.logo {
+    display: inline-block;
+    line-height: 10%;
+    vertical-align: middle;
+    width: 33%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+article>h3 {
+    display: inline;
+}
+
+article>p {
+    display: block;
+    
+    text-align: justify;
+}
+
+.services-section>h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.services-section:not(:first-child) {
+    flex: 1;
+}
