@@ -153,6 +153,7 @@
         </div>
       </article>
     </section>
+    
     <!-- Seccio Portfolio (David) -->
     <section>
     <div class="container Section-Portfolio">
@@ -209,7 +210,9 @@
       </div>
     </div>
     </section>
-    <!-- Fi seccio PortFolio-->
+    <!-- Fi Seccio PortFolio-->
+
+    <!-- Seccio Contact -->
     <section>
       <h2>Contact</h2>
       <h3>You can find us:</h3>
@@ -233,23 +236,73 @@
         <i>Email Address: <a href="mailto:info@salleurl.edu">info@salleurl.edu</a></i>
       </p>
     </section>
-    <section class="emailus-section">
-      <h2 style="color:white">Email Us</h2>
-      <form class="formulario" action="server.html" method="POST">
-        <label for="name">Name*:</label> <input type="text" id="name" required><br>
-        <label for="email">Email*:</label> <input type="text" id="email" required><br>
-        <label for="phone">Phone:</label> <input type="text" id="number"><br>
-        <label for="company">Company Name:</label> <input type="text" id="company"><br>
-        <label for="subject">Subject*:</label> <input type="text" id="subject" required><br>
-        <label for="message">Message*:</label> <textarea name="message" id="message" cols="50" rows="5"
-          required></textarea><br>
-        <input class="button" type="submit" value="Send">
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>© 2016 - <a style="color: white;  " href="https://salle.url.edu">LaSalle</a>. All Rights Reserved.</p>
-  </footer>
+    <!-- Fi Seccio Contact -->
+
+    <!-- Seccio Email Us (Rocio-David) -->
+    <div class="container EmailUsForm">
+      <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+              <form>
+                  <div class="row">
+                      <h2 class="EmailUs-h2">Email Us</h2>
+                  </div>
+                  <div class="row mb-3 align-items-center">
+                      <label for="inputNom" class="col-sm-2 col-form-label">Name*</label>
+                      <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputNom" required>
+                      </div>
+                  </div>
+                  <div class="row mb-3 align-items-center">
+                      <label for="inputEmail" class="col-sm-2 col-form-label">Email*</label>
+                      <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail" required>
+                      </div>
+                  </div>
+
+                  <div class="row mb-3 align-items-center">
+                      <label for="inputTelefon" class="col-sm-2 col-form-label">Phone </label>
+                      <div class="col-sm-10">
+                          <input type="tel" class="form-control" id="inputTelefon">
+                      </div>
+                  </div>
+
+                  <div class="row mb-3 align-items-center">                       
+                      <label for="inputSubject" class="col-sm-2 col-form-label">Subject*</label>                        
+                      <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputSubject" required>
+                      </div>
+                  </div>
+
+                  <div class="row mb-3 align-items-center">
+                      <label for="inputMessage" class="col-sm-2 col-form-label ">Message*</label>                           
+                      <div class="col-sm-10">                                                   
+                          <textarea class="form-control" id="inputMessage" rows="3" required></textarea>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col text-center">
+                          <input type="submit" value="Send">
+                          <br>
+                      </div>
+                  </div>
+              </form>
+          </div>
+          <div class="col-md-3"></div>
+      </div>
+  </div>
+  <!-- Seccio Email Us (Rocio-David) -->
+
+  <!-- Seccio Footer -->
+  <div class="container">
+      <div class="row align-items-center">
+          <footer>
+              <br>
+              <p>© 2016 - <a class="FooterLink" href="https://salle.url.edu">LaSalle</a>. All Rights Reserved.</p>
+          </footer>
+      </div>
+  </div>
+  <!-- Fi Seccio Footer -->
 </body>
 
 </html>
