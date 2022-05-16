@@ -236,7 +236,7 @@ h3 {
 
     .EmailUsForm {
         background-color: #79629e;
-        background-image: url(img/map-image.png);
+        background-image: url(../img/map-image.png);
         background-size: auto;        
     }
 
@@ -260,6 +260,7 @@ h3 {
 
     label {
         text-align: right;
+        color: white;
     }
 
 /* Section Footer */
