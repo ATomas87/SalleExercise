@@ -6,7 +6,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
-*{
+* {
     font-family: "Open Sans", sans-serif;
 }
 
@@ -23,12 +23,17 @@ i {
     color: purple;
 }*/
 
-.fa-circle{
+.fa-circle {
     color: grey;
-    
+
 }
 
-.fa-gear, .fa-rss, .fa-earth-americas, .fa-flag, .fa-code, .fa-cloud{
+.fa-gear,
+.fa-rss,
+.fa-earth-americas,
+.fa-flag,
+.fa-code,
+.fa-cloud {
     color: purple;
 }
 
@@ -60,17 +65,17 @@ div.logo {
     vertical-align: middle;
 }
 
-article>h3 {
+article h3 {
     display: inline;
 }
 
-article>p {
+article p {
     display: block;
-    
+
     text-align: justify;
 }
 
-.services-section>h2 {
+.services-section h2 {
     width: 100%;
     text-align: center;
 }
@@ -84,8 +89,9 @@ article>p {
 /* Inicio sección Contact */
 iframe {
     border-radius: 50%;
-    
+
 }
+
 /* Final sección Contact */
 
 html {
@@ -94,25 +100,25 @@ html {
 
 .we {
     background-color: rgb(216, 213, 213);
-    }
+}
 
 h2 {
-    color:rgb(69, 67, 67);
+    color: rgb(69, 67, 67);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     text-align: center;
 }
 
 .subtitulo {
-    color:rgb(153, 150, 150);
-    font-family: Arial, Helvetica, sans-serif; 
+    color: rgb(153, 150, 150);
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     text-align: center;
     line-height: 1.5em;
 }
 
 .titulo1 {
-    color:rgb(69, 67, 67);
+    color: rgb(69, 67, 67);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     text-align: left;
@@ -124,7 +130,7 @@ h2 {
 
 .box1 {
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(98, 95, 95);
+    color: rgb(98, 95, 95);
     display: inline;
     width: 20%;
     float: left;
@@ -133,21 +139,21 @@ h2 {
     margin-left: 20em;
 }
 
-.box1 img{
+.box1 img {
     width: 30%;
     float: left;
     margin-right: 0.5em;
 }
 
 .vertical {
-    color:rgb(191, 187, 187);
+    color: rgb(191, 187, 187);
     width: 0em;
     height: 50em;
     margin-left: 5em;
 }
 
 .titulo2 {
-    color:rgb(98, 95, 95);
+    color: rgb(98, 95, 95);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     text-align: left;
@@ -160,7 +166,7 @@ h2 {
 
 .box2 {
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(98, 95, 95);
+    color: rgb(98, 95, 95);
     display: inline;
     width: 20%;
     float: left;
@@ -175,7 +181,7 @@ aside {
 }
 
 .titulo3 {
-    color:rgb(69, 67, 67);
+    color: rgb(69, 67, 67);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     text-align: left;
@@ -187,7 +193,7 @@ aside {
 
 .box3 {
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(98, 95, 95);
+    color: rgb(98, 95, 95);
     display: block;
     width: 20%;
     float: right;
@@ -196,7 +202,7 @@ aside {
 
 /* Section Portfolio (David)   */
 
-.Section-Portfolio{
+.Section-Portfolio {
     background-color: #F2F2F2;
 }
 
@@ -227,7 +233,7 @@ h2 {
     font-style: normal;
     font-size: 2.5em;
     font-weight: 300;
-    color: dimgrey;    
+    color: dimgrey;
 }
 
 h3 {
@@ -242,79 +248,79 @@ h3 {
 /* Section Email Us (Rocio) */
 
 
-    /* Section Email Us */
+/* Section Email Us */
 
-    .EmailUsForm {
-        background-color: #79629e;
-        background-image: url(../img/map-image.png);
-        background-size: auto;        
-    }
+.EmailUsForm {
+    background-color: #79629e;
+    background-image: url(../img/map-image.png);
+    background-size: auto;
+}
 
-    .EmailUs-h2 {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-size: 2.5em;
-        font-weight: 300;
-        color: white;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
+.EmailUs-h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 
-    input[type="submit"] {
-        margin: 0 auto;
-        border-radius: 10px;
-        color: black;
-    }
+input[type="submit"] {
+    margin: 0 auto;
+    border-radius: 10px;
+    color: black;
+}
 
-    label {
-        text-align: right;
-        color: white;
-    }
+label {
+    text-align: right;
+    color: white;
+}
 
 /* Section Footer */
 
-    footer {
-        background-color: #61458c;
-        text-align: right;
-        color: white;
-        border-color: #61458c;
-        font-size: 0.8em;
-    }
+footer {
+    background-color: #61458c;
+    text-align: right;
+    color: white;
+    border-color: #61458c;
+    font-size: 0.8em;
+}
 
-    .FooterLink {
-        color: white;
-    }
+.FooterLink {
+    color: white;
+}
 
 
 
 /* Section Header */
 
-  header{
+header {
     width: 1024px;
-    height: 500px;  
+    height: 500px;
     background-image: url(../img/header.jpg);
     background-size: 100% 100%;
 }
 
 
-h1{
+h1 {
     color: white;
     font-family: "Open Sans";
 
 }
 
-.main-navigator{
+.main-navigator {
     background-color: #61458C;
 }
 
-.main-navigator-element{
+.main-navigator-element {
     background-color: #61458C;
-    color:white;
+    color: white;
 }
 
-li{
+li {
     display: inline;
 
 }
