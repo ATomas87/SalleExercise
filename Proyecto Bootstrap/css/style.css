@@ -10,6 +10,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
+/* Inicio Sección Our Services */
 .fa-stack.big {
     font-size: 3em;
 }
@@ -77,6 +78,15 @@ article>p {
 .services-section:not(:first-child) {
     flex: 1;
 }
+
+/* Final sección Our Services*/
+
+/* Inicio sección Contact */
+iframe {
+    border-radius: 50%;
+    
+}
+/* Final sección Contact */
 
 html {
     font-family: open Sans;
