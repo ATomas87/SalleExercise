@@ -1,5 +1,14 @@
 /*  Generals */
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px; /* 1rem = 10px Lucía truco tamaño*/
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .opensans {
@@ -28,7 +37,6 @@ i {
 
 .fa-circle {
     color: grey;
-
 }
 
 .fa-gear,
@@ -87,26 +95,28 @@ article>p {
     flex: 1;
 }
 
-/* Fi Section Services */
-
-
-/* Section who we are */
-
 .we {
     background-color: rgb(216, 213, 213);
-}
+    display:flex;
+    flex-direction: column;
+    padding-left: 5em;
+    padding-right: 5em;
+    }
 
 h2 {
-    color: rgb(69, 67, 67);
-    font-size: 2em;
+    color:rgb(69, 67, 67);  
+    font-size: 3.8rem;
     text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .subtitulo {
-    color: rgb(153, 150, 150);
-    font-size: 1em;
+    color:rgb(153, 150, 150); 
+    font-size: 1rem;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
 
 .titulo1 {
@@ -114,8 +124,7 @@ h2 {
     font-size: 1.5em;
     text-align: left;
     width: 20%;
-    margin-right: 1em;
-    margin-left: 13.2em;
+    margin-right: 50rem;
     margin-bottom: 0.5em;
 }
 
@@ -123,10 +132,9 @@ h2 {
     color: rgb(98, 95, 95);
     display: inline;
     width: 20%;
-    float: left;
+    float: left; 
+    width: 25%;
     text-align: justify;
-    margin-right: 1em;
-    margin-left: 20em;
 }
 
 .box1 img {
@@ -134,6 +142,7 @@ h2 {
     float: left;
     margin-right: 0.5em;
 }
+
 
 .vertical {
     color: rgb(191, 187, 187);
@@ -144,13 +153,22 @@ h2 {
 
 .titulo2 {
     color: rgb(98, 95, 95);
+
+.line {
+    border: none;
+    border-left: 1px solid hsla(200, 10%, 50%,100);
+    height: 100vh;
+    width: 1px;
+    margin: 0 auto;   
+}
+
+.titulo2 {
+    color:rgb(69, 67, 67);   
     font-size: 1.5em;
     text-align: left;
     width: 20%;
-    margin-right: 1em;
-    margin-left: 35em;
-    margin-bottom: 0.5em;
-    float: left;
+    margin-left: 50rem;
+    margin-bottom: 0.5rem;
 }
 
 .box2 {
@@ -159,23 +177,24 @@ h2 {
     width: 20%;
     float: left;
     text-align: justify;
-    margin-right: 1em;
-    margin-left: 50em;
+    margin-left: 50rem;
+    float: right;
 }
 
 aside {
-    display: block;
-    margin-top: 30em;
+    margin-left: 50rem;
+    margin-bottom: 1rem;
+    float: right;
 }
+
 
 .titulo3 {
     color: rgb(69, 67, 67);
     font-size: 1.5em;
     text-align: left;
     width: 20%;
-    float: right;
-    margin-right: 1em;
-    margin-left: 20em;
+    margin-left: 50rem;
+    margin-bottom: 0.5em;
 }
 
 .box3 {
@@ -184,6 +203,7 @@ aside {
     width: 20%;
     float: right;
     text-align: justify;
+    margin-left: 50rem;
 }
 
 /* Fi Section Who we are */
