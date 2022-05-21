@@ -5,7 +5,8 @@ html {
 }
 
 body {
-    font-size: 16px; /* 1rem = 10px Lucía truco tamaño*/
+    font-size: 16px;
+    /* 1rem = 10px Lucía truco tamaño*/
 }
 
 
@@ -15,7 +16,7 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-*{
+* {
     font-family: "Open Sans", sans-serif;
 }
 
@@ -31,19 +32,22 @@ i {
     color: purple;
 }*/
 
-.fa-circle{
+.fa-circle {
     color: grey;
-    
+
 }
 
-.fa-gear, .fa-rss, .fa-earth-americas, .fa-flag, .fa-code, .fa-cloud{
+.fa-gear,
+.fa-rss,
+.fa-earth-americas,
+.fa-flag,
+.fa-code,
+.fa-cloud {
     color: purple;
 }
 
 .services-section {
-    display: flex;
     margin: auto;
-    max-width: 1024px;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
@@ -74,7 +78,7 @@ article>h3 {
 
 article>p {
     display: block;
-    
+
     text-align: justify;
 }
 
@@ -90,48 +94,52 @@ article>p {
 /*Lucía*/
 .we {
     background-color: rgb(216, 213, 213);
-    display:flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-left: 5em;
     padding-right: 5em;
-    }
+    display: block;
+    margin: auto;
+}
 
 h2 {
-    color:rgb(69, 67, 67);
+    color: rgb(69, 67, 67);
     font-family: "Open Sans";
     font-size: 3.8rem;
     text-align: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .subtitulo {
-    color:rgb(153, 150, 150);
-    font-family: "Open Sans"; 
+    color: rgb(153, 150, 150);
+    font-family: "Open Sans";
     font-size: 1rem;
     text-align: center;
     line-height: 1.5rem;
 }
 
-.titulo1 {
-    color:rgb(69, 67, 67);
+.izquierda {
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+.izquierda .titulo {
+    color: rgb(69, 67, 67);
     font-family: "Open Sans";
     font-size: 1.5em;
     text-align: left;
-    width: 20%;
-    margin-right: 50rem;
-    margin-bottom: 0.5em;
 }
 
-.box1 {
+.izquierda .box1 {
     font-family: "Open Sans";
-    color:rgb(98, 95, 95);
-    width: 25%;
+    color: rgb(98, 95, 95);
+    width: 70%;
     text-align: justify;
 }
 
-.box1 img{
+.izquierda .box1 img {
     width: 30%;
     float: left;
     margin-right: 0.5em;
@@ -139,44 +147,46 @@ h2 {
 
 .line {
     border: none;
-    border-left: 1px solid hsla(200, 10%, 50%,100);
+    border-left: 1px solid hsla(200, 10%, 50%, 100);
     height: 100vh;
     width: 1px;
-    margin: 0 auto; 
-   /* margin-left: 50%;
-    width: 500px;
-    margin-top: 120px;
-    border-left: 5px rgb(184, 48, 48);*/
+    margin: 0 auto;
 }
 
-.titulo2 {
-    color:rgb(69, 67, 67);
+.derecha {
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+.derecha .titulo {
+    color: rgb(69, 67, 67);
     font-family: "Open Sans";
     font-size: 1.5em;
     text-align: left;
-    width: 20%;
-    margin-left: 50rem;
-    margin-bottom: 0.5rem;
 }
 
-.box2 {
+.derecha .box2 {
     font-family: "Open Sans";
-    color:rgb(98, 95, 95);
-    width: 25%;
+    color: rgb(98, 95, 95);
+    width: 70%;
     text-align: justify;
-    margin-left: 50rem;
-    float: right;
+    margin-left: 0rem;
+
 }
 
-aside {
-    margin-left: 50rem;
+aside img {
+    margin-left: 0rem;
     margin-bottom: 1rem;
-    float: right;
+    margin-top: 0;
+    margin-right: 0rem;
+    width: 50%;
+
 }
 
 
 .titulo3 {
-    color:rgb(69, 67, 67);
+    color: rgb(69, 67, 67);
     font-family: "Open Sans";
     font-size: 1.5em;
     text-align: left;
@@ -187,7 +197,7 @@ aside {
 
 .box3 {
     font-family: "Open Sans";
-    color:rgb(98, 95, 95);
+    color: rgb(98, 95, 95);
     width: 25%;
     text-align: justify;
     margin-left: 50rem;
@@ -195,7 +205,7 @@ aside {
 
 /* Section Portfolio (David)   */
 
-.Section-Portfolio{
+.Section-Portfolio {
     background-color: #F2F2F2;
 }
 
@@ -226,7 +236,7 @@ h2 {
     font-style: normal;
     font-size: 2.5em;
     font-weight: 300;
-    color: dimgrey;    
+    color: dimgrey;
 }
 
 h3 {
@@ -241,79 +251,79 @@ h3 {
 /* Section Email Us (Rocio) */
 
 
-    /* Section Email Us */
+/* Section Email Us */
 
-    .EmailUsForm {
-        background-color: #79629e;
-        background-image: url(../img/map-image.png);
-        background-size: auto;        
-    }
+.EmailUsForm {
+    background-color: #79629e;
+    background-image: url(../img/map-image.png);
+    background-size: auto;
+}
 
-    .EmailUs-h2 {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-size: 2.5em;
-        font-weight: 300;
-        color: white;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
+.EmailUs-h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 
-    input[type="submit"] {
-        margin: 0 auto;
-        border-radius: 10px;
-        color: black;
-    }
+input[type="submit"] {
+    margin: 0 auto;
+    border-radius: 10px;
+    color: black;
+}
 
-    label {
-        text-align: right;
-        color: white;
-    }
+label {
+    text-align: right;
+    color: white;
+}
 
 /* Section Footer */
 
-    footer {
-        background-color: #61458c;
-        text-align: right;
-        color: white;
-        border-color: #61458c;
-        font-size: 0.8em;
-    }
+footer {
+    background-color: #61458c;
+    text-align: right;
+    color: white;
+    border-color: #61458c;
+    font-size: 0.8em;
+}
 
-    .FooterLink {
-        color: white;
-    }
+.FooterLink {
+    color: white;
+}
 
 
 
 /* Section Header */
 
-  header{
+header {
     width: 1024px;
-    height: 500px;  
+    height: 500px;
     background-image: url(../img/header.jpg);
     background-size: 100% 100%;
 }
 
 
-h1{
+h1 {
     color: white;
     font-family: "Open Sans";
 
 }
 
-.main-navigator{
+.main-navigator {
     background-color: #61458C;
 }
 
-.main-navigator-element{
+.main-navigator-element {
     background-color: #61458C;
-    color:white;
+    color: white;
 }
 
-li{
+li {
     display: inline;
 
 }
