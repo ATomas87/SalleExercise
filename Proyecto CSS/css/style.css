@@ -20,6 +20,13 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+html {
+    font-family: open Sans;
+}
+
+
+/* Section Services */
+
 .fa-stack.big {
     font-size: 3em;
 }
@@ -28,13 +35,9 @@ i {
     vertical-align: bottom;
 }
 
-/*article:hover {
-    color: purple;
-}*/
 
 .fa-circle {
     color: grey;
-
 }
 
 .fa-gear,
@@ -91,7 +94,6 @@ article>p {
     flex: 1;
 }
 
-/*Lucía*/
 .we {
     background-color: rgb(236, 236, 236);
     flex-direction: row;
@@ -217,7 +219,10 @@ aside img {
     margin-top: 2rem;
 }
 
-/* Section Portfolio (David)   */
+/* Fi Section Who we are */
+
+
+/* Section Portfolio  */
 
 .Section-Portfolio {
     background-color: #F2F2F2;
@@ -245,8 +250,7 @@ aside img {
     border-radius: 260px;
 }
 
-h2 {
-    font-family: "Open Sans";
+.Portfolio-h2 {
     font-style: normal;
     font-size: 2.5em;
     font-weight: 300;
@@ -254,15 +258,11 @@ h2 {
 }
 
 h3 {
-    font-family: "Open Sans";
     font-style: normal;
     font-weight: 200;
     color: dimgrey;
     text-align: center;
 }
-
-
-/* Section Email Us (Rocio) */
 
 
 /* Section Email Us */
@@ -274,7 +274,6 @@ h3 {
 }
 
 .EmailUs-h2 {
-    font-family: "Open Sans";
     font-style: normal;
     font-size: 2.5em;
     font-weight: 300;
@@ -296,6 +295,8 @@ label {
     color: white;
 }
 
+/* Fi Section Email Us */
+
 /* Section Footer */
 
 footer {
@@ -310,7 +311,7 @@ footer {
     color: white;
 }
 
-
+/* Fi Section Footer */
 
 /* Section Header */
 
@@ -321,11 +322,8 @@ header {
     background-size: 100% 100%;
 }
 
-
 h1 {
     color: white;
-    font-family: "Open Sans";
-
 }
 
 .main-navigator {
@@ -339,5 +337,6 @@ h1 {
 
 li {
     display: inline;
-
 }
+
+/* Fi Section Header */
