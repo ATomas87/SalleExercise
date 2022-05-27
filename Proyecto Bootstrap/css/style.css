@@ -15,10 +15,47 @@ i {
     vertical-align: bottom;
 }
 
-.fa-circle {
-    color: grey;
-
+.logo {
+    text-align: center;
 }
+
+.logo:hover .fa-circle {
+    color: #61458c;
+}
+
+.logo:hover .fa-code{
+    color: #79629e;
+}
+
+.logo:hover .fa-gear{
+    color: #79629e;
+}
+
+.logo:hover .fa-flag{
+    color: #79629e;
+}
+
+.logo:hover .fa-earth-americas{
+    color: #79629e;
+}
+
+.logo:hover .fa-rss{
+    color: #79629e;
+}
+
+.logo:hover .fa-cloud{
+    color: #79629e;
+}
+
+.fa-circle {
+    color: lightgrey;
+    transition: 0.3s;
+}
+
+.fa-circle:hover::before {
+    content: "\f111";
+}
+
 
 .fa-gear,
 .fa-rss,
@@ -27,6 +64,7 @@ i {
 .fa-code,
 .fa-cloud {
     color: purple;
+    transition: 0.3s;
 }
 
 .services-section {
@@ -81,6 +119,24 @@ article p {
 iframe {
     border-radius: 50%;
 
+}
+
+.contact-section h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-section h3 {
+    font-size: 1rem;
+}
+
+.maps {
+    text-align: center;
+}
+
+.addresses p {
+    text-align: center;
+    padding: 1rem;
 }
 
 /* Final sección Contact */
@@ -187,8 +243,9 @@ footer {
 /* Section Header */
 
 header {
-    width: 1024px;
-    height: 500px;
+    position: relative;
+    width: 100%;
+    height: 400px;
     background-image: url(../img/header.jpg);
     background-size: 100% 100%;
 }
@@ -201,7 +258,11 @@ h1 {
 }
 
 .main-navigator {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     background-color: #61458C;
+    vertical-align: middle;
 }
 
 .main-navigator-element {
