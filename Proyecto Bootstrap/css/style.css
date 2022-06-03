@@ -126,23 +126,27 @@ iframe {
     text-align: center;
 }
 
-.contact-section h3 {
-    font-size: 1rem;
-}
+/*Parte lucía*/
 
-.maps {
+h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: dimgrey;
     text-align: center;
 }
 
-.addresses p {
+.subtitulo {
     text-align: center;
-    padding: 1rem;
 }
 
-/* Final sección Contact */
+.box1 {
+    text-align: justify;
+}
 
-.we {
-    background-color: rgb(216, 213, 213);
+.box2 {
+    text-align: justify;
 }
 
 /* Section Portfolio (David)   */
@@ -243,9 +247,8 @@ footer {
 /* Section Header */
 
 header {
-    position: relative;
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-image: url(../img/header.jpg);
     background-size: 100% 100%;
 }
