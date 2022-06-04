@@ -55,7 +55,6 @@ p {
 }
 
 .column1 {
-    display: inline-block;
     float: left;
     width: 48%;
     font-size: 1.5rem;
@@ -94,7 +93,6 @@ p {
 }
 
 .column2 {
-    display: inline-block;
     float: right;
     width: 48%;
     font-size: 1.5rem;
