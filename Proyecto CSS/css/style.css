@@ -37,6 +37,13 @@ p {
 /* Parte Lucía - Sección Who We Are */
 
 /* Parte Antonio - Sección Our Services */
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5rem;
+    position: relative;
+}
+
 
 /* Parte David - Sección Portfolio */
 
