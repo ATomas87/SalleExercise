@@ -1,279 +1,47 @@
-/*  Generals */
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* Parte común */
+:root {
+    --morado: rgba(97, 69, 140, 255);
+    --morado-fondo-form: rgba(121, 98, 158, 255);
+    --gris-h: rgba(78, 78, 78, 255);
+    --gris-p: rgba(135, 135, 135, 255);
+    --gris-circulo: rgba(211, 211, 211, 255);
+    --crema-fondo: rgba(242, 242, 242, 255);
+}
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans';
 }
 
-/* Inicio Sección Our Services */
-.fa-stack.big {
-    font-size: 3em;
-}
-
-i {
-    vertical-align: bottom;
-}
-
-.logo {
-    text-align: center;
-}
-
-.logo:hover .fa-circle {
-    color: #61458c;
-}
-
-.logo:hover .fa-code{
-    color: #79629e;
-}
-
-.logo:hover .fa-gear{
-    color: #79629e;
-}
-
-.logo:hover .fa-flag{
-    color: #79629e;
-}
-
-.logo:hover .fa-earth-americas{
-    color: #79629e;
-}
-
-.logo:hover .fa-rss{
-    color: #79629e;
-}
-
-.logo:hover .fa-cloud{
-    color: #79629e;
-}
-
-.fa-circle {
-    color: lightgrey;
-    transition: 0.3s;
-}
-
-.fa-circle:hover::before {
-    content: "\f111";
-}
-
-
-.fa-gear,
-.fa-rss,
-.fa-earth-americas,
-.fa-flag,
-.fa-code,
-.fa-cloud {
-    color: purple;
-    transition: 0.3s;
-}
-
-.services-section {
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-article {
-    display: flex;
-    width: 33%;
-}
-
-div.content {
-    display: inline-block;
-    width: 66%;
-}
-
-div.logo {
-    display: inline-block;
-    line-height: 10%;
-    vertical-align: middle;
-    width: 33%;
-    height: 100%;
-    vertical-align: middle;
-}
-
-article h3 {
-    display: inline;
-}
-
-article p {
-    display: block;
-
-    text-align: justify;
-}
-
-.services-section h2 {
-    width: 100%;
-    text-align: center;
-}
-
-.services-section:not(:first-child) {
-    flex: 1;
-}
-
-/* Final sección Our Services*/
-
-/* Inicio sección Contact */
-iframe {
-    border-radius: 50%;
-
-}
-
-.contact-section h2 {
-    width: 100%;
-    text-align: center;
-}
-
-/*Parte lucía*/
-
-h2 {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-size: 2.5em;
-    font-weight: 300;
-    color: dimgrey;
-    text-align: center;
-}
-
-.subtitulo {
-    text-align: center;
-}
-
-.box1 {
-    text-align: justify;
-}
-
-.box2 {
-    text-align: justify;
-}
-
-/* Section Portfolio (David)   */
-
-.Section-Portfolio {
-    background-color: #F2F2F2;
-}
-
-.ImatgePortfolio {
-    height: 154px;
-    width: 240px;
-}
-
-.ImatgePortfolio:hover {
-    transform: rotate(-20deg);
-    transition-duration: 1s;
-}
-
-
-.ImatgePortfolioEspecial {
-    height: 154px;
-    width: 240px;
-}
-
-.ImatgePortfolioEspecial:hover {
-    transform: rotate(360deg);
-    transition-duration: 1s;
-    border-radius: 260px;
+h1 {
+    font-size: 2.5rem;
+    /*Cambiar color a blanco cuando se ponga la imagen del header*/
 }
 
 h2 {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-size: 2.5em;
-    font-weight: 300;
-    color: dimgrey;
+    font-size: 3rem;
+    color: var(--gris-h);
+    text-align: center;
 }
 
 h3 {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 200;
-    color: dimgrey;
-    text-align: center;
+    font-size: 1.5rem;
+    color: var(--gris-h);
 }
 
-
-/* Section Email Us (Rocio) */
-
-
-/* Section Email Us */
-
-.EmailUsForm {
-    background-color: #79629e;
-    background-image: url(../img/map-image.png);
-    background-size: auto;
+p {
+    color: var(--gris-p);
 }
 
-.EmailUs-h2 {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-size: 2.5em;
-    font-weight: 300;
-    color: white;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+/* Parte Judit - Sección Header */
 
+/* Parte Lucía - Sección Who We Are */
 
-input[type="submit"] {
-    margin: 0 auto;
-    border-radius: 10px;
-    color: black;
-}
+/* Parte Antonio - Sección Our Services */
 
-label {
-    text-align: left;
-    color: white;
-}
+/* Parte David - Sección Portfolio */
 
-/* Section Footer */
+/* Parte Antonio - Sección Contact */
 
-footer {
-    background-color: #61458c;
-    text-align: right;
-    color: white;
-    border-color: #61458c;
-    font-size: 0.8em;
-}
+/* Parte Rocío - Sección Email Us */
 
-.FooterLink {
-    color: white;
-}
-
-
-
-/* Section Header */
-
-header {
-    width: 100%;
-    height: 500px;
-    background-image: url(../img/header.jpg);
-    background-size: 100% 100%;
-}
-
-
-h1 {
-    color: white;
-    font-family: "Open Sans";
-
-}
-
-.main-navigator {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: #61458C;
-    vertical-align: middle;
-}
-
-.main-navigator-element {
-    background-color: #61458C;
-    color: white;
-}
-
-li {
-    display: inline;
-
-}
+/* Parte David - Sección Footer */
