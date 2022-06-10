@@ -44,4 +44,68 @@ p {
 
 /* Parte Rocío - Sección Email Us */
 
+.emailUsForm {
+    background-color: rgba(121, 98, 158, 255);
+    background-image: url(../img/map-image.png);
+    width: 100%;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.emailUsForm h2 {
+    font-family: "Open Sans";
+    color: white;
+    font-size: 2.5em;
+    font-weight: 550;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.emailUsForm div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+/* Arriba | Derecha | Abajo | Izquierda */
+
+.emailUsForm input[type="text"] {
+    width: 25%;
+    padding: 0.5em;
+    /* margin: 1em 0 1em 0; */
+    /* float: right;  */
+    align-items: center;
+    justify-content: center;
+}
+
+.emailUsForm label {
+    width: 25%;
+    /* margin: 1em 0 1em 0; */
+    /* float: left; */
+    color: white;
+    /* display: flex; */
+    padding: 0.5em; 
+    align-items: center;
+}
+
+.emailUsForm textarea {
+    width: 25%;
+    height: 5em;
+    padding: 0.5em;
+    margin: 2em;
+    float: right;
+}
+
+.emailUsForm input[type="submit"] {
+    border-radius: 1px;
+    border-color: black;
+    padding: 0.5em;
+    margin: 2em;
+}
+
+
+
 /* Parte David - Sección Footer */
