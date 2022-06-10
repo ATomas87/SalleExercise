@@ -40,9 +40,28 @@ p {
 ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5rem;
+    column-gap: 3rem;
     position: relative;
 }
+
+ul div{
+    display: inline-block;
+    justify-self: end;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+
+article {
+    display: inline-block;
+}
+
+article h3{
+    margin-top: 0%;
+}
+
 
 
 /* Parte David - Sección Portfolio */
