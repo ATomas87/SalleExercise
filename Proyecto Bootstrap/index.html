@@ -187,19 +187,31 @@
       </p>
     </section>
     <!-- Parte Rocío - Sección Email Us -->
-    <form>
+    <form class="emailUsForm">
       <h2>Email Us</h2>
-      <label for="inputNom">Name*</label>
-      <input type="text" id="inputNom" required>
-      <label for="inputEmail">Email*</label>
-      <input type="email" id="inputEmail" required>
-      <label for="inputTelefon">Phone </label>
-      <input type="tel" id="inputTelefon">
-      <label for="inputSubject">Subject*</label>
-      <input type="text" id="inputSubject" required>
-      <label for="inputMessage">Message*</label>
-      <textarea id="inputMessage" rows="3" required></textarea>
-      <input type="submit" value="Send">
+      <div class="form-group row"> 
+        <label for="inputName" class="col-sm-2 col-form-label col-form-label-lg">Name: *</label>
+        <input type="text" class="form-control form-control-lg" id="inputNom" required> 
+      </div>
+      <div class="form-group row">
+        <label for="inputEmail" class="col-sm-2 col-form-label col-form-label-lg">Email: *</label>
+        <input type="text" class="form-control form-control-lg" id="inputEmail" required>
+      </div>
+      <div class="form-group row">
+        <label for="inputTelefon" class="col-sm-2 col-form-label col-form-label-lg">Phone:</label>
+        <input type="text" class="form-control form-control-lg" id="inputTelefon">
+      </div>
+      <div class="form-group row">
+        <label for="inputSubject" class="col-sm-2 col-form-label col-form-label-lg">Subject: *</label>
+        <input type="text" class="form-control form-control-lg" id="inputSubject" required>
+      </div>
+      <div class="form-row">
+        <label for="inputMessage" class="col-sm-2 col-form-label col-form-label-lg">Message: *</label>
+        <textarea id="inputMessage" class="form-control form-control-lg" rows="3" required></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Send">
+      </div>
     </form>
   </main>
   <!-- Parte David Sección Footer -->
