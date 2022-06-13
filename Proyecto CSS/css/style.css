@@ -6,6 +6,7 @@
     --gris-p: rgba(135, 135, 135, 255);
     --gris-circulo: rgba(211, 211, 211, 255);
     --crema-fondo: rgba(242, 242, 242, 255);
+    --blanco: rgba(255, 255, 255, 255);
 }
 
 body {
