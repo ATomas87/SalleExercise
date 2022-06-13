@@ -6,6 +6,7 @@
     --gris-p: rgba(135, 135, 135, 255);
     --gris-circulo: rgba(211, 211, 211, 255);
     --crema-fondo: rgba(242, 242, 242, 255);
+    --blanco: rgba(255, 255, 255, 255);
 }
 
 body {
@@ -124,6 +125,7 @@ aside img {
 }
 
 /* Parte Antonio - Sección Our Services */
+
 .services-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -189,6 +191,32 @@ aside img {
 
 /* Parte David - Sección Portfolio */
 
+.Portfolio-Section {
+    background-color: var(--crema-fondo)
+}
+
+.Portfolio-Image {
+    height: 154px;
+    width: 240px;
+}
+
+.Portfolio-Image:hover {
+    transform: rotate(-20deg);
+    transition-duration: 1s;
+}
+
+
+.Portfolio-ImageSpecial {
+    height: 154px;
+    width: 240px;
+}
+
+.Portfolio-ImageSpecial:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    border-radius: 260px;
+}
+
 /* Parte Antonio - Sección Location */
 
 .location-section {
@@ -229,3 +257,15 @@ aside img {
 /* Parte Rocío - Sección Email Us */
 
 /* Parte David - Sección Footer */
+
+.Footer-Section {
+    background-color: var(--morado);
+    text-align: right;
+    color: rgba(255, 255, 255, 255);
+    border-color: var(--morado);
+    font-size: 0.8em;
+}
+
+.Footer-Link {
+    color: rgba(255, 255, 255, 255);
+}
