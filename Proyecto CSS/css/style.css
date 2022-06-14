@@ -37,10 +37,160 @@ p {
 
 /* Parte Lucía - Sección Who We Are */
 
+.who {
+    background-color: var(--crema-fondo);
+    flex-direction: row;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: block;
+    margin: auto;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+
+.column1 {
+    float: left;
+    width: 48%;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.left {
+    display: inline-block;
+    width: 48%;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 2rem;   
+}
+
+.box1 {
+    text-align: justify;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.box1 img {
+    width: 30%;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.line{
+    width: 1px;
+    height: 860px;
+    display: inline-block;
+    background-color: rgb(194, 193, 193);
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.column2 {
+    float: right;
+    width: 48%;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.right {
+    display: inline-block;
+    width: 48%;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.box2 {
+    text-align: justify;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+aside img {
+    margin-left: 3rem;
+    margin-bottom: 0rem;
+    margin-top: 0.5rem;
+    margin-right: 0rem;
+    width: 80%;
+}
+
 /* Parte Antonio - Sección Our Services */
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    position: relative;
+    margin-right: 2.5rem;
+}
+
+.services-list div {
+    display: inline-block;
+    justify-self: end;
+}
+
+.services-list li {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+
+.services-list article {
+    display: inline-block;
+}
+
+.services-list article h3 {
+    margin-top: 0%;
+}
+
+.services-list article p {
+    text-align: justify;
+    font-size: small;
+}
+
+.services-list span>i:nth-child(1) {
+    color: var(--gris-circulo);
+    transition: color .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.services-list span:hover :nth-child(1) {
+    display: none;
+}
+
+.services-list span>i:nth-child(2) {
+    color: var(--morado);
+    transition: color .5s;
+}
+
+.services-list span:hover :nth-child(2) {
+    color: white;
+}
+
+.services-list span>i:nth-child(3) {
+    color: white;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+
+.services-list span:hover :nth-child(3) {
+    opacity: 1;
+    z-index: -1;
+    color: var(--morado);
+}
 
 /* Parte David - Sección Portfolio */
 
+<<<<<<< HEAD
 .Portfolio-Section {
     background-color: var(--crema-fondo)
 }
@@ -84,3 +234,45 @@ p {
 .Footer-Link {
     color: rgba(255, 255, 255, 255);
 }
+=======
+/* Parte Antonio - Sección Location */
+
+.location-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.location-section h2 {
+    margin: 0;
+    width: 100%;
+}
+
+.location-section h4 {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+.location-section p {
+    width: 75%;
+    color: var(--gris-h);
+}
+
+.location-section>p {
+    width: 100%;
+    text-align: center;
+    color: var(--gris-p);
+}
+
+.location-section iframe {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* Parte Rocío - Sección Email Us */
+
+/* Parte David - Sección Footer */
+>>>>>>> 806211b89273f59dc01be1d334221fd2ae3cb5c2
