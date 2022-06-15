@@ -36,6 +36,16 @@ p {
 
 /* Parte Lucía - Sección Who We Are */
 
+.subtitle {
+text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+
 /* Parte Antonio - Sección Our Services */
 
 /* Parte David - Sección Portfolio */
