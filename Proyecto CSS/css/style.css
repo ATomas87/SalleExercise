@@ -44,11 +44,18 @@ header {
 background-image: url("../img/header.jpg");
 background-repeat: no-repeat;
 background-size: cover, auto;
-width: 1024px;
+width: 100%;
 height: 500px;
 background-position: 50%;
+position: relative;
+}
 
-
+nav{
+    background-color: var(--morado);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
 }
 /* Parte Lucía - Sección Who We Are */
 
