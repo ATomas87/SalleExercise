@@ -35,16 +35,52 @@ p {
 /* Parte Judit - Sección Header */
 
 /* Parte Lucía - Sección Who We Are */
+.container {
+    background-color: var(--crema-fondo);
+}
 
 .subtitle {
-text-align: center;
+    text-align: center;
 }
 
 .text-justify {
     text-align: justify;
 }
 
+.col-sm-6 
 
+img#foto1 {
+    float: left;
+    margin-right: 0.5rem;
+}
+
+img#foto2 {
+    float: right;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width:768px) {
+    img#foto2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:375px) {
+    img#foto2{
+        display: none;
+    }
+}
+
+/*
+.line{
+    width: 0px;
+    height: 860px;
+    display: inline-block;
+    background-color: rgb(194, 193, 193);
+    margin-right: 0rem;
+    margin-left: 0rem;
+}
+*/
 
 /* Parte Antonio - Sección Our Services */
 
