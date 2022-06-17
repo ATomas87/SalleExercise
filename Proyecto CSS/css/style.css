@@ -12,6 +12,8 @@
 
 body {
     font-family: 'Open Sans';
+    width: 1024px;
+    margin: auto;
 }
 
 h1 {
@@ -90,9 +92,9 @@ li a {
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
-    line-height: 2rem;
+    line-height: 1.5rem;
     margin-bottom: 3rem;
 }
 
@@ -115,7 +117,7 @@ li a {
 
 .box1 {
     text-align: justify;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-top: 1rem;
 }
 
@@ -127,7 +129,7 @@ li a {
 
 .line {
     width: 1px;
-    height: 860px;
+    height: 890px;
     display: inline-block;
     background-color: rgb(194, 193, 193);
     margin-right: 1rem;
@@ -153,7 +155,7 @@ li a {
 
 .box2 {
     text-align: justify;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-top: 1rem;
 }
 
