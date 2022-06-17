@@ -81,17 +81,13 @@ li a {
     padding: 1rem;
     color: var(--blanco-h1);
     text-decoration: none;
-<<<<<<< HEAD
+
 }
-=======
-  }
 
-  a:hover {
-    background-color: var(--blanco-h1);
-    color: var(--morado);
-  }
-
->>>>>>> section/Header
+a:hover {
+   background-color: var(--blanco-h1);
+   color: var(--morado);
+}
 
 /* Parte Lucía - Sección Who We Are */
 
@@ -322,7 +318,7 @@ aside img {
 .emailUsForm {
     background-color: rgba(121, 98, 158, 255);
     background-image: url(../img/map-image.png);
-    size: 100% auto;
+    size: 1024px;
     padding-bottom: 30px;
 }
 
