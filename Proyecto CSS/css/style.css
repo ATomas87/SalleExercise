@@ -47,7 +47,7 @@ p {
 .emailUsForm {
     background-color: rgba(121, 98, 158, 255);
     background-image: url(../img/map-image.png);
-    size: 100% auto;
+    size: 1024px;
     padding-bottom: 30px;
 }
 
