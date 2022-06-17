@@ -1,4 +1,5 @@
 /* Parte común */
+
 :root {
     --morado: rgba(97, 69, 140, 255);
     --morado-fondo-form: rgba(121, 98, 158, 255);
@@ -11,7 +12,6 @@
 
 body {
     font-family: 'Open Sans';
-    
 }
 
 h1 {
@@ -41,13 +41,13 @@ p {
 /* Parte Judit - Sección Header */
 
 header {
-background-image: url("../img/header.jpg");
-background-repeat: no-repeat;
-background-size: cover, auto;
-width: 100%;
-height: 25rem;
-background-position: 50%;
-position: relative;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover, auto;
+    width: 100%;
+    height: 25rem;
+    background-position: 50%;
+    position: relative;
 }
 
 nav {
@@ -67,18 +67,14 @@ ul {
 
 li {
     float: left;
-  }
-
+}
 
 li a {
     display: block;
     padding: 1rem;
     color: var(--blanco-h1);
     text-decoration: none;
-  }
-
-
-/* Parte Lucía - Sección Who We Are */
+}
 
 /* Parte Lucía - Sección Who We Are */
 
@@ -114,7 +110,7 @@ li a {
     font-weight: bold;
     font-size: 2rem;
     text-align: left;
-    line-height: 2rem;   
+    line-height: 2rem;
 }
 
 .box1 {
@@ -129,7 +125,7 @@ li a {
     margin-right: 0.5rem;
 }
 
-.line{
+.line {
     width: 1px;
     height: 860px;
     display: inline-block;
@@ -249,7 +245,6 @@ aside img {
     transform: rotate(-20deg);
     transition-duration: 1s;
 }
-
 
 .Portfolio-ImageSpecial {
     height: 154px;
