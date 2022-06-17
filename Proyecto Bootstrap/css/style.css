@@ -38,6 +38,41 @@ p {
 
 /* Parte Antonio - Sección Our Services */
 
+.services-section p {
+    text-align: justify;
+}
+
+.services-section span>i:nth-child(1) {
+    color: var(--gris-circulo);
+    transition: color .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.services-section span:hover :nth-child(1) {
+    display: none;
+}
+
+.services-section span>i:nth-child(2) {
+    color: var(--morado);
+    transition: color .5s;
+}
+
+.services-section span:hover :nth-child(2) {
+    color: white;
+}
+
+.services-section span>i:nth-child(3) {
+    color: white;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+
+.services-section span:hover :nth-child(3) {
+    opacity: 1;
+    z-index: -1;
+    color: var(--morado);
+}
+
 /* Parte David - Sección Portfolio */
 
 .Portfolio-Section {
@@ -66,7 +101,38 @@ p {
     border-radius: 260px;
 }
 
-/* Parte Antonio - Sección Contact */
+/* Parte Antonio - Sección Location */
+
+.location-section h2 {
+    margin: 0;
+    width: 100%;
+}
+
+.location-section h4 {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+.location-section>p:nth-child(2) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--gris-h);
+}
+
+.location-section p {
+    width: 100%;
+    text-align: center;
+    color: var(--gris-h);
+}
+
+.location-section iframe {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.map {
+    text-align: center;
+}
 
 /* Parte Rocío - Sección Email Us */
 
