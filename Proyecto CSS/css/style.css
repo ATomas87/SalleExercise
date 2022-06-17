@@ -20,8 +20,8 @@ h1 {
     text-align: left;
     margin: 0;
     position: absolute;
-    bottom: 50%;
-    padding-right: 1rem;
+    bottom: 40%;
+    padding-left: 2rem;
 }
 
 h2 {
@@ -39,7 +39,7 @@ p {
     color: var(--gris-p);
 }
 
-/* Parte Judit - Sección Header */
+/* Parte Judith - Sección Header */
 
 header {
 background-image: url("../img/header.jpg");
@@ -59,6 +59,10 @@ nav {
     width: 100%;
 }
 
+nav li:nth-child(1){
+    margin-left: 1rem;
+}
+
 ul {
     display: inline;
     list-style-type: none;
@@ -76,6 +80,11 @@ li a {
     padding: 1rem;
     color: var(--blanco-h1);
     text-decoration: none;
+  }
+
+  a:hover {
+    background-color: var(--blanco-h1);
+    color: var(--morado);
   }
 
 
