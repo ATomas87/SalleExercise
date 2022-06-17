@@ -40,8 +40,46 @@ p {
 
 /* Parte David - Sección Portfolio */
 
+.Portfolio-Section {
+    background-color: var(--crema-fondo)
+}
+
+.Portfolio-Image {
+    height: 154px;
+    width: 240px;
+}
+
+.Portfolio-Image:hover {
+    transform: rotate(-20deg);
+    transition-duration: 1s;
+}
+
+
+.Portfolio-ImageSpecial {
+    height: 154px;
+    width: 240px;
+}
+
+.Portfolio-ImageSpecial:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    border-radius: 260px;
+}
+
 /* Parte Antonio - Sección Contact */
 
 /* Parte Rocío - Sección Email Us */
 
 /* Parte David - Sección Footer */
+
+.Footer-Section {
+    background-color: var(--morado);
+    text-align: right;
+    color: rgba(255, 255, 255, 255);
+    border-color: var(--morado);
+    font-size: 0.8em;
+}
+
+.Footer-Link {
+    color: rgba(255, 255, 255, 255);
+}
