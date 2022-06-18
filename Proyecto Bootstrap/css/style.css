@@ -18,14 +18,17 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--gris-h);
     text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--gris-h);
+    font-weight: bold;
 }
 
 p {
@@ -35,6 +38,61 @@ p {
 /* Parte Judit - Sección Header */
 
 /* Parte Lucía - Sección Who We Are */
+.container {
+    background-color: var(--crema-fondo);
+}
+
+.who {
+    justify-content: center;
+}
+.subtitle {
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.vhr {
+    border-right: 1px solid var(--gris-p);
+    height:640px;
+    width: 1px;
+    display: inline-block;
+    padding: 0%;
+} 
+
+img#foto1 {
+    float: left;
+    margin-right: 0.5rem;
+}
+
+img#foto2 {
+    float: right;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width:768px) {
+    img#foto2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:375px) {
+    img#foto2{
+        display: none;
+    }
+}
+/*
+.line{
+    width: 0px;
+    height: 860px;
+    display: inline-block;
+    background-color: rgb(194, 193, 193);
+    margin-right: 0rem;
+    margin-left: 0rem;
+}
+*/
 
 /* Parte Antonio - Sección Our Services */
 
