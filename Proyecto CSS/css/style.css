@@ -255,9 +255,21 @@ aside img {
     background-color: var(--crema-fondo)
 }
 
+.Portfolio-Section p {
+    text-align: center;
+}
+
+.portfolio-image-grid {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .Portfolio-Image {
     height: 154px;
     width: 240px;
+    align-self: end;
 }
 
 .Portfolio-Image:hover {
@@ -373,6 +385,7 @@ aside img {
 /* Parte David - Sección Footer */
 
 .Footer-Section {
+    margin: 0;
     background-color: var(--morado);
     text-align: right;
     color: rgba(255, 255, 255, 255);
@@ -382,4 +395,6 @@ aside img {
 
 .Footer-Link {
     color: rgba(255, 255, 255, 255);
+    padding-top: 1rem;
+    margin: 0;
 }
