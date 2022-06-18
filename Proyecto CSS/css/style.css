@@ -330,6 +330,7 @@ aside img {
 .emailUsForm {
     background-color: rgba(121, 98, 158, 255);
     background-image: url(../img/map-image.png);
+    background-size: 1024px;
     size: 1024px;
     padding-bottom: 30px;
 }
@@ -374,7 +375,7 @@ aside img {
 }
 
 .emailUsForm input[type="submit"] {
-    width: 10%;
+    width: 11%;
     font-size: 1em;
     border-radius: 5px;
     border-color: white;
