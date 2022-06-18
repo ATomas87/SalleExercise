@@ -22,7 +22,8 @@ h1 {
     text-align: left;
     margin: 0;
     position: absolute;
-    top: 30%;
+    bottom: 40%;
+    padding-left: 2rem;
 }
 
 h2 {
@@ -40,7 +41,7 @@ p {
     color: var(--gris-p);
 }
 
-/* Parte Judit - Sección Header */
+/* Parte Judith - Sección Header */
 
 header {
     background-image: url("../img/header.jpg");
@@ -60,6 +61,10 @@ nav {
     width: 100%;
 }
 
+nav li:nth-child(1){
+    margin-left: 1rem;
+}
+
 ul {
     display: inline;
     list-style-type: none;
@@ -76,6 +81,12 @@ li a {
     padding: 1rem;
     color: var(--blanco-h1);
     text-decoration: none;
+
+}
+
+a:hover {
+   background-color: var(--blanco-h1);
+   color: var(--morado);
 }
 
 /* Parte Lucía - Sección Who We Are */
@@ -307,7 +318,7 @@ aside img {
 .emailUsForm {
     background-color: rgba(121, 98, 158, 255);
     background-image: url(../img/map-image.png);
-    size: 100% auto;
+    size: 1024px;
     padding-bottom: 30px;
 }
 
@@ -336,7 +347,7 @@ aside img {
 }
 
 .emailUsForm label {
-    width: 10%;
+    width: 15%;
     font-size: 1.3em;
     color: white;
     text-align: left;
