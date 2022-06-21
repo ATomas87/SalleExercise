@@ -194,6 +194,51 @@ img#foto2 {
 
 /* Parte Rocío - Sección Email Us */
 
+.EmailUsForm {
+    background-color: #79629e;
+    background-image: url(../img/map-image.png);
+    background-size: 100%;
+}
+
+.EmailUsForm h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 2.5em;
+    font-weight: 550;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.EmailUsForm input[type="text"] {
+    padding: 0.5em;
+    border-radius: 5px;
+    border-color: white; 
+}
+
+.EmailUsForm textarea {
+    height: 50%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.EmailUsForm label {
+    text-align: left;
+    color: white;
+    font-size: 1.3em;
+}
+
+.EmailUsForm input[type="submit"] {
+    width: 11%;
+    font-size: 1em;
+    border-radius: 5px;
+    border-color: white;
+    padding: 0.1em;
+    margin: 1.5em; 
+}
+
 /* Parte David - Sección Footer */
 
 .Footer-Section {

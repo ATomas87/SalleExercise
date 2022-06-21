@@ -277,20 +277,54 @@
       </div>
     </section>
     <!-- Parte Rocío - Sección Email Us -->
-    <form>
-      <h2>Email Us</h2>
-      <label for="inputNom">Name*</label>
-      <input type="text" id="inputNom" required>
-      <label for="inputEmail">Email*</label>
-      <input type="email" id="inputEmail" required>
-      <label for="inputTelefon">Phone </label>
-      <input type="tel" id="inputTelefon">
-      <label for="inputSubject">Subject*</label>
-      <input type="text" id="inputSubject" required>
-      <label for="inputMessage">Message*</label>
-      <textarea id="inputMessage" rows="3" required></textarea>
-      <input type="submit" value="Send">
-    </form>
+    <div class="container-fluid EmailUsForm">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <form>
+            <div class="row">
+              <h2>Email Us</h2>
+            </div>
+            <div class="row mb-3 align-items-center">
+              <label for="inputName" class="col-sm-2 col-form-label">Name:*</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputNom" required>
+              </div>
+            </div>
+            <div class="row mb-3 align-items-center">
+              <label for="inputEmail" class="col-sm-2 col-form-label">Email:*</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputEmail" required>
+              </div>
+            </div>
+            <div class="row mb-3 align-items-center">
+              <label for="inputTelefon" class="col-sm-2 col-form-label">Phone:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputTelefon">
+              </div>
+            </div>
+            <div class="row mb-3 align-items-center">
+              <label for="inputSubject" class="col-sm-2 col-form-label">Subject:*</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputSubject" required>
+              </div>
+            </div>
+            <div class="row mb-3 align-items-center">
+              <label for="inputMessage" class="col-sm-2 col-form-label">Message:*</label>
+              <div class="col-sm-10">
+                <textarea id="inputMessage" class="form-control" rows="3" required></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <input type="submit" class="btn btn-light" value="Send">
+                <br>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
   </main>
   <!-- Parte David Sección Footer -->
   <div class="container-fluid Footer-Section">
