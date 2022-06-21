@@ -48,8 +48,10 @@ p {
 }
 
 /* Parte Lucía - Sección Who We Are */
-.container {
+section.container-fluid.justify-content-center {
     background-color: var(--crema-fondo);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .who {
@@ -68,7 +70,7 @@ p {
 
 .vhr {
     border-right: 1px solid var(--gris-p);
-    height:640px;
+    height:580px;
     width: 1px;
     display: inline-block;
     padding: 0%;
