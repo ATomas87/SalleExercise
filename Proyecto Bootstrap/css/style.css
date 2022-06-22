@@ -71,7 +71,7 @@ p {
     background-color: var(--morado);
 }
 
-div.container {
+div .container {
     background-color: var(--morado);
 }
 
@@ -142,18 +142,12 @@ img#foto2 {
     }
 }
 
-/*
-.line{
-    width: 0px;
-    height: 860px;
-    display: inline-block;
-    background-color: rgb(194, 193, 193);
-    margin-right: 0rem;
-    margin-left: 0rem;
-}
-*/
-
 /* Parte Antonio - Sección Our Services */
+
+.services-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 .services-section p {
     text-align: justify;
@@ -193,7 +187,9 @@ img#foto2 {
 /* Parte David - Sección Portfolio */
 
 .Portfolio-Section {
-    background-color: var(--crema-fondo)
+    background-color: var(--crema-fondo);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .Portfolio-Image {
@@ -310,4 +306,8 @@ img#foto2 {
 
 .Footer-Link {
     color: rgba(255, 255, 255, 255);
+}
+
+.color-font {
+    color: var(--blanco-h1);
 }
