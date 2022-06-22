@@ -42,15 +42,53 @@ p {
 }
 
 /* Parte Judit - Sección Header */
-.header{
-    background-image: url("../img/header.jpg");
-    background-repeat: no-repeat;
-    background-size: cover, auto;
-    width: 100%;
-    height: 25rem;
-    background-position: 50%;
-    position: relative;
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        background-image: url("../img/header-mini.png");
+        background-repeat: no-repeat;
+        background-size: cover, auto;
+        width: 100%;
+        height: 25rem;
+        background-position: 50%;
+        position: relative;
+    }
 }
+
+@media only screen and (min-width: 769px) {
+    .banner {
+        background-image: url("../img/header.jpg");
+        background-repeat: no-repeat;
+        background-size: cover, auto;
+        width: 100%;
+        height: 25rem;
+        background-position: 50%;
+        position: relative;
+    }
+}
+
+.navbar-expand-lg {
+    background-color: var(--morado);
+}
+
+div.container {
+    background-color: var(--morado);
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: var(--blanco-h1);
+}
+
+.navbar-toggler {
+    color: var(--blanco-h1);
+}
+
+header.container {
+    margin-bottom: 3rem;
+}
+
+
 
 /* Parte Lucía - Sección Who We Are */
 section.container-fluid.justify-content-center {
@@ -62,6 +100,7 @@ section.container-fluid.justify-content-center {
 .who {
     justify-content: center;
 }
+
 .subtitle {
     text-align: center;
     margin-bottom: 1.6rem;
@@ -79,7 +118,7 @@ section.container-fluid.justify-content-center {
     width: 1px;
     display: inline-block;
     padding: 0%;
-} 
+}
 
 img#foto1 {
     float: left;
@@ -92,16 +131,17 @@ img#foto2 {
 }
 
 @media screen and (max-width:768px) {
-    img#foto2{
+    img#foto2 {
         display: none;
     }
 }
 
 @media screen and (max-width:375px) {
-    img#foto2{
+    img#foto2 {
         display: none;
     }
 }
+
 /*
 .line{
     width: 0px;
