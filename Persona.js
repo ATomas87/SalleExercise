@@ -33,7 +33,7 @@ Persona.prototype.yearOfBirth = function () {
   return 2022 - this.age;
 }
 
-console.log(persona.yearOfBirth());
+
 
 console.log(persona.title);
 
