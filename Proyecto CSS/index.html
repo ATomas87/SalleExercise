@@ -9,14 +9,15 @@
   <link rel="stylesheet" href="./css/all.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
   <!--<script src="./Javascript/index.js"></script> -->
-  <script src="./Javascript/Ejercicio2.js"></script>
+  <!-- <script src="./Javascript/Ejercicio2.js"></script> -->
+  <script src=".\Javascript\main.js" type='module'></script>
 </head>
 
 <body>
   <!-- Parte Judith - Sección Header -->
   <header>
     <h1>My Business Webpage</h1>
-    <nav>
+    <nav class="navbar" data-controller="kn" data-action="keyup@window->kn.follow">
       <ul>
         <li class="navItem" id="who"><a href="#Who whe are">Who we are?</a></li>
         <li class="navItem" id="services"><a href="#Services">Services</a></li>
