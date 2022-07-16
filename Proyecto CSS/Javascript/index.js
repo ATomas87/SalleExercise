@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', showTime)
 
 import { borderEffects } from "./borderEffects.js"
 
-document.addEventListener('load', borderEffect)
+window.addEventListener('load', borderEffects)
 
 function EvaluarCaracter(evObject) {
     let Caracter = String.fromCharCode(evObject.which);
@@ -29,12 +29,5 @@ function EvaluarCaracter(evObject) {
     }
 }
 
-window.onload = function () { document.onkeypress = EvaluarCaracter; }
+//window.addEventListener("load", function () { document.onkeypress = EvaluarCaracter; })
 
-document.addEventListener('DOMContentLoaded', borderEffects)
-
-function showSection() {
-
-    const selectedSection = document.addEventListener
-
-}
