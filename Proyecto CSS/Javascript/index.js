@@ -1,14 +1,14 @@
-
-function showTime() {
+/* function showTime() {
 
     const currentTime = new Date()
     return alert(currentTime)
 
-}
+} */
 
-document.addEventListener('DOMContentLoaded', showTime)
+/* document.addEventListener('DOMContentLoaded', showTime) */
 
-function borderEffects() {
+
+/* function borderEffects() {
 
     const divsWeb = document.querySelectorAll('div, section')
     console.log(divsWeb)
@@ -28,9 +28,11 @@ function borderEffects() {
         })
 
     }
-}
+} */
 
-function EvaluarCaracter(evObject) {
+/* document.addEventListener('DOMContentLoaded', borderEffects) */
+
+/* function EvaluarCaracter(evObject) {
     let Caracter = String.fromCharCode(evObject.which);
     switch (Caracter) {
         case "1":
@@ -50,14 +52,13 @@ function EvaluarCaracter(evObject) {
             break;
         default: break;
     }
-}
+} */
 
-window.onload = function () { document.onkeypress = EvaluarCaracter; }
-
-document.addEventListener('DOMContentLoaded', borderEffects)
-
-function showSection() {
+//OMITIDO:
+//window.onload = function () { document.onkeypress = EvaluarCaracter; }
+//OMITIDO:
+/* function showSection() {
 
     const selectedSection = document.addEventListener
 
-}
+} */
