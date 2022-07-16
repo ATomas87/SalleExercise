@@ -1,10 +1,5 @@
 
-function showTime() {
-
-    const currentTime = new Date()
-    return alert(currentTime)
-
-}
+import { showTime } from "./showTime.js"
 
 document.addEventListener('DOMContentLoaded', showTime)
 
