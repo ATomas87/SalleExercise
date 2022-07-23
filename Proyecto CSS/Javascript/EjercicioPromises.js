@@ -33,3 +33,61 @@ const escucharAoB = () => {
         document.addEventListener("keydown", onkeyDown);
     });
 };
+
+const enseñarMsj = (msj) => {
+    return new Promise((resolve, reject))
+}
+
+const thankYouAnyway = () => {
+    const html = '<div>Gracias por participar :('
+}
+
+const terminar = () => {
+    console.log("terminar");
+    const div = document.getElementById("ejercicio");
+    div.remove();
+};
+
+const escucharConTimeout = async () => {
+    console.log("escucharConTimeout");
+    return await Promise.race([
+        timeout(20000),
+        mostrarMsj().then(escucharAoB).then(enseñarMsj, thankYouAnyway),
+    ]);
+};
+
+const inicio = () => {
+    console.log("inicio");
+    return new Promise((resolve, reject) => {
+        console.log("initializing promise");
+        window.addEventListener("load", resolve);
+    });
+};
+
+inicio()
+    .then(() => wait(500));
+    .then(escucharConTimeout);
+    .finally(() => wait(2000));
+    .then(terminar);
+
+async function encuesta() {
+    await mostrarMsj()
+    let msj = await escucharAoB()
+    enseñarMsj(msj);
+    cath(e) {
+        trankYouAnyway();
+    }
+}
+
+async function go() {
+    try {
+        await inicio();
+        await wait(1000);
+        await Promise.race([timeout(20000), encuesta()]);
+    } finally {
+        await wait(500);
+        terminar();
+    }
+}
+
+go();
