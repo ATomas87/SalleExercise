@@ -71,8 +71,8 @@ inicio()
     .then(terminar);
 
 async function encuesta() {
-    await mostrarMsj()
-    let msj = await escucharAoB()
+    await mostrarMsj();
+    let msj = await escucharAoB();
     enseñarMsj(msj);
     cath(e) {
         trankYouAnyway();
