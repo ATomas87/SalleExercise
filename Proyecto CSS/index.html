@@ -8,15 +8,28 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/all.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-  <!--<script src="./Javascript/index.js"></script> -->
-  <script src="./Javascript/Ejercicio2.js"></script>
+  <script src="./Javascript/TeclatMarges.js"></script>
 </head>
 
 <body>
+  <script src="./Javascript/Temps.js"></script>
   <!-- Parte Judith - Sección Header -->
   <header>
     <h1>My Business Webpage</h1>
     <nav>
+      <!-- Carrousel del temps -->
+      <div id="divMeteoPare" class="weather">
+        <div id="divLocation"></div>
+        <div id="divImatge"></div>
+        <div id="divTemperatura"></div>
+        <div id="divTempMin"></div>
+        <div id="divTempMax"></div>
+        <div id="divHumitat"></div>
+        <div id="divClose">
+          <p id="closeCarrousel" style="float: right;">x</p>
+        </div>
+      </div>
+
       <ul>
         <li class="navItem" id="who"><a href="#Who whe are">Who we are?</a></li>
         <li class="navItem" id="services"><a href="#Services">Services</a></li>
@@ -27,6 +40,17 @@
     </nav>
   </header>
   <main>
+    <!-- Banner del temps-->
+    <div id="MeteoDiv" class="grid-BannerTemps">
+      <div id="divDataLocalitat">
+        <span id="close">x</span>
+      </div>
+      <div id="divTemperaturaImatge" style="display:inline-flex;"></div>
+      <div id="divAltres"></div>
+    </div>
+
+
+
     <!-- Parte Lucía - Sección Who We Are-->
     <section class="who">
 

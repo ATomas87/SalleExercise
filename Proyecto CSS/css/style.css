@@ -399,3 +399,81 @@ aside img {
     padding-top: 1rem;
     margin: 0;
 }
+
+
+
+/* Banner Temps*/
+
+.grid-BannerTemps {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #eed4a3;
+    padding: 1px;
+}
+
+.grid-BannerTemps > div {
+    background-color: #eed4a3;
+  }
+
+.grid-item {
+    background-color: #eed4a3;       
+    text-align: left;
+}
+
+#close {    
+    vertical-align: top;
+    text-align: right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#eed4a3;
+    cursor: pointer;
+}
+
+/* Carrousel temps */
+
+.weather
+{
+    display:flex;
+    justify-content: space-evenly;
+    height: 3em;
+    text-align: start;
+    align-items: center;
+    background: #eecb8a;
+    /* El scroll se mantiene oculto, los divs hijos se mantienen*/
+    overflow: hidden;
+
+}
+
+/* a tots els divs fills (que contenen les dades trossejades), del div "pare" */
+div#divLocation,
+div#divImatge,
+div#divTemperatura,
+div#divTempMin,
+div#divTempMax,
+div#divHumitat
+{
+    animation-name: animation_weather ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* Cada vez que termina el ciclo, la animacion se reinicia al.. y comienza desde el principio. Este es el comportamiento por defecto. */
+    animation-direction: normal;
+    position: relative;
+}
+
+@keyframes animation_weather {
+    0%{ right: -100%;}
+    100%{ right: 100%;}
+}
+
+#closeCarrousel {   
+    position:relative; 
+    vertical-align: top;
+    text-align: right;
+    /*display:inline;
+    padding:2px 5px;*/
+    background:#eecb8a;
+    cursor: pointer;
+    display:flex;
+  justify-content: flex-end;
+}
