@@ -1,12 +1,21 @@
 
-const link = 'https://api.openweathermap.org/data/2.5/weather?lat=41.3828939&lon=2.1774322&appid=01d9e7b4d713c38aec39e45459f44833&units=metric&lang=ca'
+// async function getCoordinates () {
+//     return fetch('https://ipapi.co/json/')
+//     .then(response => response.json())
+//     //.then(data => coor = {latitude: data["latitude"], longitude: data["longitude"]})
+// }
+
+// let coor = await getCoordinates();
+// console.log(coor);
+
+const link = `https://api.openweathermap.org/data/2.5/weather?lat=41.3828939&lon=2.1774322&appid=01d9e7b4d713c38aec39e45459f44833&units=metric&lang=ca`
 
 let temps = {
-    nom:"",
+    nom: "",
     main: "",
     descripcio: "",
     icon: "",
-    urlIcon: "", 
+    urlIcon: "",
     //Patró imatge:"http://openweathermap.org/img/wn/" + icon +"@2x.png"   
     temperatura: "",
     sensacio: "",
@@ -20,7 +29,7 @@ let temps = {
 
 async function ObtenirTemps() {
     const response = await fetch(link);
-    const data = await response.json();   
+    const data = await response.json();
     if (response.status === 200) {
         temps.main = data.weather[0].main;
         temps.descripcio = data.weather[0].description;
@@ -55,7 +64,7 @@ async function MostrarImatge(vdades) {
     }
     else {
         console.error("HTTP-Error, càrrega imatge: " + response.status);
-    }   
+    }
 }
 
 
@@ -63,8 +72,7 @@ async function MostrarImatge(vdades) {
 
 // Funcions síncrones
 
-function MostrarTemperaturaImatge(vdades)
-{
+function MostrarTemperaturaImatge(vdades) {
     MostrarImatge(vdades);
 
     const divTemperaturaImatge = document.getElementById("divTemperaturaImatge")
@@ -86,8 +94,7 @@ function ObtenirDataAvui() {
     return today;
 }
 
-function MostrarDataLocalitzacio(vdades)
-{
+function MostrarDataLocalitzacio(vdades) {
     const divDataLocalitat = document.getElementById('divDataLocalitat');
 
     const pData = document.createElement('p');
@@ -95,13 +102,12 @@ function MostrarDataLocalitzacio(vdades)
     divDataLocalitat.appendChild(pData);
 
     const pLocalitat = document.createElement('p');
-    pLocalitat.innerHTML = 'Lloc: '+ vdades["nom"];
+    pLocalitat.innerHTML = 'Lloc: ' + vdades["nom"];
     pLocalitat.style.fontSize = "2em"
     divDataLocalitat.appendChild(pLocalitat);
 }
 
-function MostrarAltresDades(vdades)
-{
+function MostrarAltresDades(vdades) {
     const divAltres = document.getElementById('divAltres');
 
     const pMinMax = document.createElement('p');
@@ -117,33 +123,30 @@ function MostrarAltresDades(vdades)
     divAltres.appendChild(pHumitat);
 
     const pPressio = document.createElement('p');
-    pPressio.innerText = 'Pressió: ' + vdades["pressioAt"] +' bar';
+    pPressio.innerText = 'Pressió: ' + vdades["pressioAt"] + ' bar';
     divAltres.appendChild(pPressio);
 }
 
-function MostrarBannerTemps(visible)
-{
+function MostrarBannerTemps(visible) {
     const divContainer = document.getElementById('MeteoDiv');
-    if(visible=== false)
-    {
+    if (visible === false) {
         divContainer.style.display = "none"
-    }else{
+    } else {
         divContainer.style.display = "grid";
     }
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
 
-function MostrarDadesCarrousel(vdades)
-{
+function MostrarDadesCarrousel(vdades) {
     const divLocation = document.getElementById('divLocation');
     const pLocation = document.createElement('p');
-    pLocation.innerText = 'Lloc: ' +vdades["nom"];
+    pLocation.innerText = 'Lloc: ' + vdades["nom"];
     divLocation.appendChild(pLocation);
 
     const divTemperatura = document.getElementById('divTemperatura');
     const pTemperatura = document.createElement('p');
-    pTemperatura.innerText = 'Temperatura: ' + vdades["temperatura"] +'º';
+    pTemperatura.innerText = 'Temperatura: ' + vdades["temperatura"] + 'º';
     divTemperatura.appendChild(pTemperatura);
 
     const divTempMin = document.getElementById('divTempMin');
@@ -177,30 +180,28 @@ async function MostrarImatgeCarrousel(vdades) {
     }
     else {
         console.error("HTTP-Error, càrrega imatge: " + response.status);
-    }   
+    }
 }
 
 /*  MAIN */
 
 document.addEventListener("DOMContentLoaded", async () => {
-    try {       
+    try {
         const dades = await ObtenirTemps();
-        if (dades !== null)
-        {
+        if (dades !== null) {
             MostrarBannerTemps(true);
             MostrarDataLocalitzacio(dades);
-            MostrarTemperaturaImatge(dades);            
+            MostrarTemperaturaImatge(dades);
             MostrarAltresDades(dades);
 
             MostrarDadesCarrousel(dades);
             MostrarImatgeCarrousel(dades);
         }
-        else
-        {
+        else {
             MostrarBannerTemps(false);
         }
     } catch (e) {
-        console.error('ERROR:' + e);        
+        console.error('ERROR:' + e);
         MostrarBannerTemps(false);
     }
 });
@@ -215,6 +216,6 @@ window.onload = function () {
         this.parentNode.parentNode.remove();
         return false;
     };
-    
+
 
 };
