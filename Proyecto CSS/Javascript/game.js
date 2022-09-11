@@ -1,8 +1,5 @@
-// if (window.location.hash == "#easteregg") {
-//     console.log("Tiene hash " + window.location.hash)
-// }
 
-var countries = {
+var countriesCodes = {
     AF: 'Afghanistan',
     AX: 'Aland Islands',
     AL: 'Albania',
@@ -251,44 +248,84 @@ var countries = {
 }
 
 function getRandomCountryCode() {
-    var keys = Object.keys(countries);
+    var keys = Object.keys(countriesCodes);
     return keys[keys.length * Math.random() << 0]
 }
 
-
-//console.log(getRandomCountryCode());
-
-const queryForCountry = JSON.stringify({
-    query: `{
-        country(code: "${getRandomCountryCode()}"){
-            name
-            capital
-            emoji
-            emojiU
-            currency
-            languages {
-                code
+function randomQueryGenerator() {
+    const queryForCountry = JSON.stringify({
+        query: `{
+            country(code: "${getRandomCountryCode()}"){
                 name
+                capital
             }
-        }
-    }`
-})
+        }`
+    });
+    return queryForCountry;
+}
 
-console.log(queryForCountry);
-
-async function getCountryInfo(query) {
-
+async function getCountryToGuess() {
     const response = await fetch("https://countries.trevorblades.com/", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: query
+        body: randomQueryGenerator()
     })
     let result = await response.json()
     return result
 }
 
-let countr = await getCountryInfo(queryForCountry)
+async function getThreeCountriesRandomly() {
+    const randomCountries = [];
+    for (let i = 0; i < 3; i++) {
+        const response = await fetch("https://countries.trevorblades.com/", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: randomQueryGenerator()
+        })
+        randomCountries.push(await response.json())
+    }
+    return randomCountries;
+}
 
-console.log(countr)
+function shuffleCountries(countryToGuess, threeRandomCountries) {
+    const countriesForTheGame = [countryToGuess, ...threeRandomCountries];
+    const shuffledCountries = countriesForTheGame.sort((a, b) => 0.5 - Math.random());
+    return shuffledCountries;
+}
+
+let countryToGuess = await getCountryToGuess();
+let threeRandomCountries = await getThreeCountriesRandomly()
+
+let shuffledCountries = shuffleCountries(countryToGuess, threeRandomCountries);
+
+document.addEventListener("DOMContentLoaded", async () => {
+    console.log("Fuera")
+    if (window.location.hash === "#easteregg") {
+        console.log("Dentro")
+        var tag = document.createElement("div");
+        var paragraph = document.createElement("p");
+        var text = document.createTextNode(threeRandomCountries);
+        paragraph.appendChild(text);
+        tag.appendChild(paragraph);
+
+        var element = document.getElementById("Services")
+        element.appendChild(tag);
+    }
+})
+
+if (window.location.hash === "#easteregg") {
+    let country = await getCountryToGuess();
+    console.log(country)
+    var tag = document.createElement("div");
+    var paragraph = document.createElement("p");
+    var text = document.createTextNode(country.data.country.name);
+    paragraph.appendChild(text);
+    tag.appendChild(paragraph);
+
+    var element = document.getElementById("Services")
+    element.appendChild(tag);
+}

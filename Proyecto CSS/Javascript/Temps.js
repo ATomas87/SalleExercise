@@ -1,14 +1,13 @@
 
-// async function getCoordinates () {
-//     return fetch('https://ipapi.co/json/')
-//     .then(response => response.json())
-//     //.then(data => coor = {latitude: data["latitude"], longitude: data["longitude"]})
-// }
+async function getCoordinates () {
+    return fetch('https://ipapi.co/json/')
+    .then(response => response.json())
+    //.then(data => coor = {latitude: data["latitude"], longitude: data["longitude"]})
+}
+let coordinates = await getCoordinates();
+console.log(coordinates["latitude"]);
 
-// let coor = await getCoordinates();
-// console.log(coor);
-
-const link = `https://api.openweathermap.org/data/2.5/weather?lat=41.3828939&lon=2.1774322&appid=01d9e7b4d713c38aec39e45459f44833&units=metric&lang=ca`
+const link = `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates["latitude"]}&lon=${coordinates["longitude"]}&appid=01d9e7b4d713c38aec39e45459f44833&units=metric&lang=ca`
 
 let temps = {
     nom: "",
