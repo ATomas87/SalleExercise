@@ -13,17 +13,32 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/all.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <script src="./Javascript/TeclatMarges.js"></script>
 </head>
 
 <body>
-
+  <script src="./Javascript/Temps.js"></script>
   <!-- Parte Judith - Sección Header -->
   <header class="container">
     <div class="banner">
       <h1 class="col">My Business Webpage</h1>
     </div>
 
+    <!-- Carrousel del temps -->
+    <div class="container weather" id="divMeteoPare">
+      <div id="divLocation"></div>
+      <div id="divImatge"></div>
+      <div id="divTemperatura"></div>
+      <div id="divTempMin"></div>
+      <div id="divTempMax"></div>
+      <div id="divHumitat"></div>
+      <div id="divClose">
+        <p id="closeCarrousel" style="float: right;">x</p>
+      </div>
+    </div>
     <nav class="navbar navbar-expand-lg">
+
+
       <div class="container">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -62,8 +77,18 @@
         </div>
       </div>
     </nav>
+<!-- Banner del temps-->
+<div class="container grid-BannerTemps" id="MeteoDiv" >
+  <div id="divDataLocalitat">
+    <span id="close">x</span>
+  </div>
+  <div id="divTemperaturaImatge" style="display:inline-flex;"></div>
+  <div id="divAltres"></div>
+</div>
   </header>
   <main>
+    
+
     <!-- Parte Lucía - Sección Who We Are-->
     <section class="container justify-content-center">
       <div class="who">
@@ -368,7 +393,8 @@
     <div class="row align-items-center">
       <footer>
         <br>
-        <p class="color-font">© 2016 - <a class="Footer-Link" href="https://www.salleurl.edu/es">LaSalle</a>. All Rights Reserved.</p>
+        <p class="color-font">© 2016 - <a class="Footer-Link" href="https://www.salleurl.edu/es">LaSalle</a>. All Rights
+          Reserved.</p>
       </footer>
     </div>
   </div>

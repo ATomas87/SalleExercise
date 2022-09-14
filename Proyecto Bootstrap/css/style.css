@@ -7,6 +7,7 @@
     --gris-circulo: rgba(211, 211, 211, 255);
     --crema-fondo: rgba(242, 242, 242, 255);
     --blanco-h1: rgba(255, 255, 255, 255);
+    --crema-banner: #eecb8a;
 }
 
 body {
@@ -310,4 +311,82 @@ img#foto2 {
 
 .color-font {
     color: var(--blanco-h1);
+}
+
+
+/* Banner Temps*/
+
+.grid-BannerTemps {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--crema-banner);
+    padding: 1px;
+    /*#eed4a3*/
+}
+
+.grid-BannerTemps > div {
+    background-color: var(--crema-banner);
+  }
+
+.grid-item {
+    background-color: var(--crema-banner);       
+    text-align: left;
+}
+
+#close {    
+    vertical-align: top;
+    text-align: right;
+    display:inline-block;
+    padding:2px 5px;
+    background:var(--crema-banner);
+    cursor: pointer;
+}
+
+/* Carrousel temps */
+
+.weather
+{
+    display:flex;
+    justify-content: space-evenly;
+    height: 3em;
+    text-align: start;
+    align-items: center;
+    background: var(--crema-banner);
+    /* El scroll se mantiene oculto, los divs hijos se mantienen*/
+    overflow: hidden;
+
+}
+
+/* a tots els divs fills (que contenen les dades trossejades), del div "pare" */
+div#divLocation,
+div#divImatge,
+div#divTemperatura,
+div#divTempMin,
+div#divTempMax,
+div#divHumitat
+{
+    animation-name: animation_weather ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* Cada vez que termina el ciclo, la animacion se reinicia al.. y comienza desde el principio. Este es el comportamiento por defecto. */
+    animation-direction: normal;
+    position: relative;
+}
+
+@keyframes animation_weather {
+    0%{ right: -100%;}
+    100%{ right: 100%;}
+}
+
+#closeCarrousel {   
+    position:relative; 
+    vertical-align: top;
+    text-align: right;
+    /*display:inline;
+    padding:2px 5px;*/
+    background:var(--crema-banner);
+    cursor: pointer;
+    display:flex;
+  justify-content: flex-end;
 }
