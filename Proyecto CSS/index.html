@@ -9,27 +9,31 @@
   <link rel="stylesheet" href="./css/all.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
   <script src="./Javascript/TeclatMarges.js"></script>
+  <script src="./Javascript/Temps.js"></script>
+  <script src="./Javascript/game.js"></script>
 </head>
 
 <body>
-  <script src="./Javascript/Temps.js"></script>
-  <script src="./Javascript/joc.js"></script>
   <!-- Parte Judith - Sección Header -->
   <header>
     <h1>My Business Webpage</h1>
-    <nav>
-      <!-- Carrousel del temps -->
-      <div id="divMeteoPare" class="weather">
+
+    <!-- Carrousel del temps -->
+    <div id="divMeteoPare" class="divWeather">
+      <div class="divInfo">
         <div id="divLocation"></div>
         <div id="divImatge"></div>
         <div id="divTemperatura"></div>
         <div id="divTempMin"></div>
         <div id="divTempMax"></div>
         <div id="divHumitat"></div>
-        <div id="divClose">
-          <p id="closeCarrousel" style="float: right;">x</p>
-        </div>
       </div>
+      <div id="divClose">
+        <p id="closeCarrousel" style="float: right;">x</p>
+      </div>
+    </div>
+    <nav>
+
 
       <ul>
         <li class="navItem" id="who"><a href="#Who whe are">Who we are?</a></li>
@@ -41,15 +45,15 @@
     </nav>
   </header>
   <main>
-    <div id="divPaisos"></div>
-    <!-- Banner del temps-->
+    <div id="divPaisos" class="game"></div>
+    <!-- Banner del temps
     <div id="MeteoDiv" class="grid-BannerTemps">
       <div id="divDataLocalitat">
         <span id="close">x</span>
       </div>
       <div id="divTemperaturaImatge" style="display:inline-flex;"></div>
       <div id="divAltres"></div>
-    </div>
+    </div> -->
 
 
 
@@ -284,6 +288,18 @@
     <p class="Footer-Link">© 2016 - <a class="Footer-Link" href="https://salle.url.edu">LaSalle</a>. All Rights
       Reserved.</p>
   </footer>
+ 
 </body>
+
+<script>
+  const container = document.querySelector('#divPaisos');
+  container.addEventListener('click', function (e) {
+    console.log("click");
+    if (e.target.classList.contains('answerButton')) {
+      alert(e.target.inneHTML);
+    }
+  }
+  );    
+</script>
 
 </html>

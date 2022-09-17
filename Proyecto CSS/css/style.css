@@ -401,37 +401,9 @@ aside img {
 }
 
 
-
-/* Banner Temps*/
-
-.grid-BannerTemps {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #eed4a3;
-    padding: 1px;
-}
-
-.grid-BannerTemps > div {
-    background-color: #eed4a3;
-  }
-
-.grid-item {
-    background-color: #eed4a3;       
-    text-align: left;
-}
-
-#close {    
-    vertical-align: top;
-    text-align: right;
-    display:inline-block;
-    padding:2px 5px;
-    background:#eed4a3;
-    cursor: pointer;
-}
-
 /* Carrousel temps */
 
-.weather
+.divWeather
 {
     display:flex;
     justify-content: space-evenly;
@@ -441,7 +413,19 @@ aside img {
     background: #eecb8a;
     /* El scroll se mantiene oculto, los divs hijos se mantienen*/
     overflow: hidden;
+    width: 100%;
+}
 
+.divInfo
+{
+    display:flex;
+    justify-content: space-evenly;
+    height: 3em;
+    text-align: start;
+    align-items: center;
+    background: #eecb8a;    
+    overflow: hidden;
+    width: 90%;
 }
 
 /* a tots els divs fills (que contenen les dades trossejades), del div "pare" */
@@ -469,11 +453,32 @@ div#divHumitat
 #closeCarrousel {   
     position:relative; 
     vertical-align: top;
-    text-align: right;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
     /*display:inline;
     padding:2px 5px;*/
     background:#eecb8a;
     cursor: pointer;
-    display:flex;
+    /*display:flex;*/
+    width: 10%;
   justify-content: flex-end;
+}
+
+/* game */
+
+.game {
+
+    background-image: url("../img/fondo-pregunta-02.png");
+    background-repeat: no-repeat;
+    background-size: cover, auto;
+    width: 100%;
+    height: 15rem;
+    background-position: 50%;
+    position: relative;
+}
+
+.answerButton
+{
+    /**/
 }

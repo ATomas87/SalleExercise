@@ -63,6 +63,7 @@ async function MostrarImatge(vdades) {
 
 // Funcions síncrones
 
+/*
 function MostrarTemperaturaImatge(vdades)
 {
     MostrarImatge(vdades);
@@ -74,8 +75,8 @@ function MostrarTemperaturaImatge(vdades)
     pTemperatura.display = "inline-flex";
     divTemperaturaImatge.appendChild(pTemperatura);
 }
-
-
+*/
+/*
 function ObtenirDataAvui() {
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
@@ -85,7 +86,8 @@ function ObtenirDataAvui() {
     today = dd + '-' + mm + '-' + yyyy;
     return today;
 }
-
+*/
+/*
 function MostrarDataLocalitzacio(vdades)
 {
     const divDataLocalitat = document.getElementById('divDataLocalitat');
@@ -99,7 +101,8 @@ function MostrarDataLocalitzacio(vdades)
     pLocalitat.style.fontSize = "2em"
     divDataLocalitat.appendChild(pLocalitat);
 }
-
+*/
+/*
 function MostrarAltresDades(vdades)
 {
     const divAltres = document.getElementById('divAltres');
@@ -120,17 +123,19 @@ function MostrarAltresDades(vdades)
     pPressio.innerText = 'Pressió: ' + vdades["pressioAt"] +' bar';
     divAltres.appendChild(pPressio);
 }
+*/
 
 function MostrarBannerTemps(visible)
 {
-    const divContainer = document.getElementById('MeteoDiv');
+    const divContainer = document.getElementById('divMeteoPare');
     if(visible=== false)
     {
         divContainer.style.display = "none"
     }else{
-        divContainer.style.display = "grid";
+        divContainer.style.display = "inline-flex";
     }
 }
+
 
 /* ------------------------------------------------------------------------------------------------------------ */
 
@@ -188,9 +193,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (dades !== null)
         {
             MostrarBannerTemps(true);
-            MostrarDataLocalitzacio(dades);
+            /*MostrarDataLocalitzacio(dades);
             MostrarTemperaturaImatge(dades);            
-            MostrarAltresDades(dades);
+            MostrarAltresDades(dades);*/
 
             MostrarDadesCarrousel(dades);
             MostrarImatgeCarrousel(dades);
@@ -206,15 +211,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 window.onload = function () {
-    document.getElementById('close').onclick = function () {
+   /* document.getElementById('close').onclick = function () {
         this.parentNode.parentNode.remove();
         return false;
-    };
+    };*/
 
     document.getElementById('closeCarrousel').onclick = function () {
         this.parentNode.parentNode.remove();
         return false;
-    };
-    
+    };    
 
 };
