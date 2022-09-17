@@ -1,4 +1,4 @@
-
+/*
 function MostrarHora() {
     const currentTime = new Date()
     return alert(currentTime)
@@ -20,7 +20,7 @@ function DibuixarEfectesAlsMargeDelsDivs() {
             }
         })
     }
-}
+} */
 
 function EvaluarCaracter(evObject) {
     let Caracter = String.fromCharCode(evObject.which);
@@ -57,8 +57,6 @@ function CapturarOpcioTeclat()
 CarregaInicial()
 
 function CarregaInicial()
-{   
-    //document.addEventListener('DOMContentLoaded', MostrarHora)
-    //document.addEventListener('DOMContentLoaded', DibuixarEfectesAlsMargeDelsDivs)
+{     
     CapturarOpcioTeclat();   
 }

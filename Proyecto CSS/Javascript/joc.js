@@ -500,39 +500,27 @@ var countries = {
 
 }
 
-function getRandomCountryCode() {
-    var keys = Object.keys(countries);
-    //return keys[keys.length * Math.random() << 0]
-    return keys[keys.length - random(0,20)]
-}
 
 function random(min, max) {
     return Math.floor((Math.random() * (max - min + 1)) + min);
 }
 
-let queryForCountry = JSON.stringify({
-    query: `{
-       country(code: "${getRandomCountryCode()}"){
-           name
-           capital
-       }
-   }`
-})
 
-
+function getRandomCountryCode() {
+    var keys = Object.keys(countries);
+    return keys[keys.length * Math.random() << 0]
+    //return keys[keys.length - random(0,19)]
+}
 
 function getSegonRandomCountryCode() {
     var keys = Object.keys(countries);
     return keys[keys.length - random(0, 20)]
 }
 
-
-
 function getTercerRandomCountryCode() {
     var keys = Object.keys(countries);
     return keys[keys.length - random(21, 40)]
 }
-
 
 
 function getQuartRandomCountryCode() {
@@ -545,11 +533,14 @@ function random(min, max) {
 }
 
 
-
-
-
-
-
+let queryForCountry = JSON.stringify({
+    query: `{
+       country(code: "${getRandomCountryCode()}"){
+           name
+           capital
+       }
+   }`
+})
 let queryForSegonCountry = JSON.stringify({
 
     query: `{
@@ -630,10 +621,6 @@ let queryForQuartCountry = JSON.stringify({
 })
 
 
-
-
-
-
 async function getCountryInfo(query) {
     const response = await fetch("https://countries.trevorblades.com/", {
         method: 'POST',
@@ -645,47 +632,6 @@ async function getCountryInfo(query) {
     let result = await response.json()
     return result
 }
-
-/*
-const countryToGuess = getCountryInfo();
-console.log(countryToGuess);
-
-async function getThreeRandomCountries() {
-    const query = JSON.stringify({
-        query: `{
-           country(code: "${getRandomCountryCode()}"){
-               name
-               capital
-           }
-       }`
-    })
-    const arrayOfRandomCountries = []
-    while (arrayOfRandomCountries.length <= 3) {
-        const response = await fetch("https://countries.trevorblades.com/", {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: query
-        })
-
-        const country = await response.json();
-        console.log("pais", country);
-        // console.log(countryToGuess.name);
-        arrayOfRandomCountries.push(country);
-
-    }
-    return arrayOfRandomCountries;
-}
-
-const threeRandCountries = getThreeRandomCountries();
-
-//console.log(threeRandCountries);
-
-function checkAnswer() {
-    console.log("boton pulsado");
-}
-*/
 
 
 const MostrarJoc = async function () {
@@ -704,7 +650,6 @@ const MostrarJoc = async function () {
     do {
         SegonPais = await getCountryInfo(queryForSegonCountry);
     } while (SegonPais.data.country.capital == null);
-
 
 
     do {
@@ -742,7 +687,6 @@ const MostrarJoc = async function () {
     //btPrincipal.style.backgroundColor = "red";
 
 
-
     const btSegonPais = document.createElement('input');
     btSegonPais.type = "button";
     btSegonPais.id = "btSegon";
@@ -765,7 +709,6 @@ const MostrarJoc = async function () {
     btTercerPais.display = "inline-flex";
 
 
-
     const btQuartPais = document.createElement('input');
     btQuartPais.type = "button";
     btQuartPais.id = "btQuart";
@@ -775,7 +718,6 @@ const MostrarJoc = async function () {
     btQuartPais.style.marginRight = "3em";
     btQuartPais.style.cursor = "pointer";
     btQuartPais.display = "inline-flex";
-
 
 
     //Aleatorietat en la presentació.
@@ -791,16 +733,12 @@ const MostrarJoc = async function () {
             divPaisos.appendChild(btQuartPais);
             break;
 
-
-
         case 2:
             divPaisos.appendChild(btSegonPais);
             divPaisos.appendChild(btPrincipal);
             divPaisos.appendChild(btTercerPais);
             divPaisos.appendChild(btQuartPais);
             break;
-
-
 
         case 3:
             divPaisos.appendChild(btSegonPais);
@@ -809,16 +747,12 @@ const MostrarJoc = async function () {
             divPaisos.appendChild(btQuartPais);
             break;
 
-
-
         case 4:
             divPaisos.appendChild(btSegonPais);
             divPaisos.appendChild(btTercerPais);
             divPaisos.appendChild(btQuartPais);
             divPaisos.appendChild(btPrincipal);
             break;
-
-
 
         default:
             divPaisos.appendChild(btQuartPais);

@@ -60,71 +60,6 @@ async function MostrarImatge(vdades) {
 
 
 
-
-// Funcions síncrones
-
-/*
-function MostrarTemperaturaImatge(vdades)
-{
-    MostrarImatge(vdades);
-
-    const divTemperaturaImatge = document.getElementById("divTemperaturaImatge")
-    const pTemperatura = document.createElement('p');
-    pTemperatura.innerText = vdades["temperatura"] + "º";
-    pTemperatura.style.fontSize = "3em";
-    pTemperatura.display = "inline-flex";
-    divTemperaturaImatge.appendChild(pTemperatura);
-}
-*/
-/*
-function ObtenirDataAvui() {
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //Gener es 0!
-    var yyyy = today.getFullYear();
-
-    today = dd + '-' + mm + '-' + yyyy;
-    return today;
-}
-*/
-/*
-function MostrarDataLocalitzacio(vdades)
-{
-    const divDataLocalitat = document.getElementById('divDataLocalitat');
-
-    const pData = document.createElement('p');
-    pData.innerText = ObtenirDataAvui();
-    divDataLocalitat.appendChild(pData);
-
-    const pLocalitat = document.createElement('p');
-    pLocalitat.innerHTML = 'Lloc: '+ vdades["nom"];
-    pLocalitat.style.fontSize = "2em"
-    divDataLocalitat.appendChild(pLocalitat);
-}
-*/
-/*
-function MostrarAltresDades(vdades)
-{
-    const divAltres = document.getElementById('divAltres');
-
-    const pMinMax = document.createElement('p');
-    pMinMax.innerText = 'Min: ' + vdades["temp_min"] + 'º / Max: ' + vdades["temp_max"] + 'º';
-    divAltres.appendChild(pMinMax);
-
-    const pSensacio = document.createElement('p');
-    pSensacio.innerText = 'Temp. Sensació: ' + vdades["sensacio"] + "º";
-    divAltres.appendChild(pSensacio);
-
-    const pHumitat = document.createElement('p');
-    pHumitat.innerText = 'Humitat: ' + vdades["humitat"] + '%';
-    divAltres.appendChild(pHumitat);
-
-    const pPressio = document.createElement('p');
-    pPressio.innerText = 'Pressió: ' + vdades["pressioAt"] +' bar';
-    divAltres.appendChild(pPressio);
-}
-*/
-
 function MostrarBannerTemps(visible)
 {
     const divContainer = document.getElementById('divMeteoPare');
@@ -193,10 +128,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (dades !== null)
         {
             MostrarBannerTemps(true);
-            /*MostrarDataLocalitzacio(dades);
-            MostrarTemperaturaImatge(dades);            
-            MostrarAltresDades(dades);*/
-
             MostrarDadesCarrousel(dades);
             MostrarImatgeCarrousel(dades);
         }
@@ -211,11 +142,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 window.onload = function () {
-   /* document.getElementById('close').onclick = function () {
-        this.parentNode.parentNode.remove();
-        return false;
-    };*/
-
     document.getElementById('closeCarrousel').onclick = function () {
         this.parentNode.parentNode.remove();
         return false;

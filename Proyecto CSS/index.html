@@ -10,7 +10,8 @@
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
   <script src="./Javascript/TeclatMarges.js"></script>
   <script src="./Javascript/Temps.js"></script>
-  <script src="./Javascript/game.js"></script>
+  <!--<script src="./Javascript/game.js"></script>-->
+  <script src="./Javascript/Joc.js"></script>
 </head>
 
 <body>
@@ -46,16 +47,6 @@
   </header>
   <main>
     <div id="divPaisos" class="game"></div>
-    <!-- Banner del temps
-    <div id="MeteoDiv" class="grid-BannerTemps">
-      <div id="divDataLocalitat">
-        <span id="close">x</span>
-      </div>
-      <div id="divTemperaturaImatge" style="display:inline-flex;"></div>
-      <div id="divAltres"></div>
-    </div> -->
-
-
 
     <!-- Parte Lucía - Sección Who We Are-->
     <section class="who">
@@ -296,7 +287,8 @@
   container.addEventListener('click', function (e) {
     console.log("click");
     if (e.target.classList.contains('answerButton')) {
-      alert(e.target.inneHTML);
+      //alert("e.target.inneHTML");
+      alert("Has fet click");
     }
   }
   );    
