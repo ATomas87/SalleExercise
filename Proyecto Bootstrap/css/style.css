@@ -314,34 +314,6 @@ img#foto2 {
 }
 
 
-/* Banner Temps*/
-
-.grid-BannerTemps {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: var(--crema-banner);
-    padding: 1px;
-    /*#eed4a3*/
-}
-
-.grid-BannerTemps > div {
-    background-color: var(--crema-banner);
-  }
-
-.grid-item {
-    background-color: var(--crema-banner);       
-    text-align: left;
-}
-
-#close {    
-    vertical-align: top;
-    text-align: right;
-    display:inline-block;
-    padding:2px 5px;
-    background:var(--crema-banner);
-    cursor: pointer;
-}
-
 /* Carrousel temps */
 
 .weather
